@@ -11858,4 +11858,9 @@ body {
   margin: 10px auto;
 }
 
+.product {
+  width: 250px;
+  border-radius: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
