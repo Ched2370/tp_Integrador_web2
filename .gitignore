@@ -1,7 +1,4 @@
 /node_modules/
 /sass/
 *.css.map
-package-lock.json
-package.json
-src/public/css/style.css
-src/public/img/favicon_ToBuyGearGarb.svg
+
