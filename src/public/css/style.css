@@ -4,7 +4,6 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import 'animate.css';
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11871,12 +11870,13 @@ ul {
 }
 
 .product {
-  width: 150px;
-  border-radius: 20px;
+  max-width: 150px;
 }
 
-.product:hover {
-  width: 200px;
+/* .card {
+  max-height: 300px;
+} */
+.card:hover {
   cursor: pointer;
 }
 

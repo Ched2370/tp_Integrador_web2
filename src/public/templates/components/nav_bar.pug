@@ -1,29 +1,36 @@
-header.container.header.p-0
+header.container-fluit.header
   nav.navbar.navbar-expand-lg.bg-body-tertiary
-    .container-fluid
+    .container-fluid.px-5 
       a.navbar-brand
         img(src="../../img/logo_sf.png", alt="logo" id="logo") 
       button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
       .collapse.navbar-collapse#navbarSupportedContent.contenedor-menu
         form.d-flex(role='search')
-          input.form-control.me-2(type='search', placeholder='Search', aria-label='Search')
-          button.btn.btn-outline-success(type='submit') Search
-        ul.navbar-nav.me-auto.mb-2.mb-lg-0
+          input.form-control.me-2(type='search', placeholder='Buscar', aria-label='Search')
+          button.btn.btn-outline-success(type='submit') Buscar
+        ul.navbar-nav.ms-auto.mb-2.mb-lg-0-mx-auto.w-50.d-flex.justify-content-evenly 
           li.nav-item
             a.nav-link.active(aria-current='page', href='#') Inicio
           li.nav-item
-            a.nav-link(href='#') 
+            a.nav-link(href='#') Ofertas
           li.nav-item.dropdown
             a.nav-link.dropdown-toggle(href='#', role='button', data-bs-toggle='dropdown', aria-expanded='false') Categoria
             ul.dropdown-menu
               li
-                a.dropdown-item(href='#') Action
-              li
-                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Tecno
               li
                 hr.dropdown-divider
               li
-                a.dropdown-item(href='#') Something else here
+                a.dropdown-item(href='#') Joyeria
+              li
+                hr.dropdown-divider
+              li
+                a.dropdown-item(href='#') Ropa para hombre
+              li
+                a.dropdown-item(href='#') Ropa para mujer
           li.nav-item
-            a.nav-link(aria-disabled='true') Carrito 
+            .btn(type='button', data-bs-toggle='offcanvas', data-bs-target='#offcanvasRight', aria-controls='offcanvasRight') Compras
+          li.nav-item
+          a
+            i.btn(type='button', data-bs-toggle='offcanvas', data-bs-target='#offcanvasRight', aria-controls='offcanvasRight').bi.bi-cart-fill
