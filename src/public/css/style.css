@@ -11887,7 +11887,9 @@ ul {
   bottom: 30px;
 }
 
-a, .listaNav, li {
+a,
+.listaNav,
+li {
   text-align: center;
   text-decoration: none;
   padding: 0px;
