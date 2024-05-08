@@ -31,7 +31,6 @@ async function translateProducts(products) {
     });
 
     const translatedProducts = await Promise.all(translationPromises);
-
     return translatedProducts;
   } catch (error) {
     throw new Error(`Error al traducir los productos: ${error.message}`);

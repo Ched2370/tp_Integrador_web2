@@ -11853,10 +11853,7 @@ body {
   min-width: 550px;
 }
 body .sections {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
+  max-width: 100vw;
 }
 
 #logo {
@@ -11869,13 +11866,6 @@ ul {
   list-style: none;
 }
 
-.product {
-  max-width: 150px;
-}
-
-/* .card {
-  max-height: 300px;
-} */
 .card:hover {
   cursor: pointer;
 }

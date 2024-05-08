@@ -10,9 +10,7 @@ app.set(morgan);
 app.set('views', `${publicPath}/templates`);
 app.set("view engine", "pug");
 
-// midleware funcion q se ejecuta dentro de express
 app.use(express.static(publicPath))
 app.use('/', router)
-
 
 module.exports = app;

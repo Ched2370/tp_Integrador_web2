@@ -2,11 +2,13 @@ const router = require('express').Router();
 const axios = require('axios');
 const translateProducts = require('../translate');
 
+// index.pug
 router.get('/', (req, res, next)=> {
     res.render('index')
     next()
 });
 
+// productos
 router.get('/products', async (req, res) => {
     // tuve que realizar la solicitud con axios xq fetch traiga conflicto con los modulos de node
     const response = await axios.get('https://fakestoreapi.com/products')
