@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const axios = require('axios');
 const translateProducts = require('../translate');
+const agregarOfertas = require('../agregarOfertas');
 
 // index.pug
 router.get('/', (req, res, next)=> {
@@ -14,7 +15,8 @@ router.get('/products', async (req, res) => {
     const response = await axios.get('https://fakestoreapi.com/products')
     const data = response.data;
     const dataTranslate = await translateProducts(data);
-    res.send(dataTranslate);
+    const dataTranslateConOfertas = await agregarOfertas(dataTranslate);
+    res.send(dataTranslateConOfertas);
 });
 
 module.exports = router;
