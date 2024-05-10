@@ -12,12 +12,12 @@ function cargarTarjetas(element) {
   img.src = element.image;
 
   // creo overlay sobre imagen para mostrar el % de ofertas
-  const cardOverlay = document.createElement('div');
-  cardOverlay.className = 'card-img-overlay py-5';
+  const cardOverlay = document.createElement("div");
+  cardOverlay.className = "card-img-overlay py-5";
 
-  const porcentajeOferta = document.createElement('p');
-  porcentajeOferta.className = `p-2 text-bg-danger bg-opacity-75 fs-2 p-3 mt-5`;
-  porcentajeOferta.innerHTML = `<strong>${element.oferta.porcentaje}% OFF</strong>`; 
+  const porcentajeOferta = document.createElement("p");
+  porcentajeOferta.className = `p-2 text-bg-danger bg-opacity-50 fs-2 p-3 mt-5`;
+  porcentajeOferta.innerHTML = `<strong>OFERTA ${element.oferta.porcentaje}% OFF</strong>`;
 
   const cardBody = document.createElement("div");
   cardBody.className = "card-body";
@@ -42,7 +42,7 @@ function cargarTarjetas(element) {
                           <b>Oferta: <b><span class="text-bg-danger rounded px-1">$${element.oferta.precioConDescuento}</span><br>
                           <b>Ranking: <b>${element.rating.rate}<br>
                           `;
-  }else{
+  } else {
     precio.innerHTML = `<b>Categoria: <b>${element.category}<br> 
                           <b>Precio: <b><span class="text-bg-secondary rounded px-1">$${element.price}</span><br>
                           <b>Ranking: <b>${element.rating.rate}<br>
@@ -75,11 +75,10 @@ function cargarTarjetas(element) {
     // Inicio de clausulas
     let contador = 1;
     let precioAcumulado = parseFloat(element.oferta.precioConDescuento);
-    ;
-
     // Función para sumar el precio
     function sumarPrecio() {
-      precioAcumulado = parseFloat(element.oferta.precioConDescuento) * contador;
+      precioAcumulado =
+        parseFloat(element.oferta.precioConDescuento) * contador;
       return precioAcumulado.toFixed(2);
     }
 
@@ -103,7 +102,8 @@ function cargarTarjetas(element) {
 
     const carro = document.getElementById("carrito");
     const idProd = this.id;
-    const divCarrito = document.getElementById(`producto-${idProd}`);
+    //si colocaba const generaba error divCarrito
+    let divCarrito = document.getElementById(`producto-${idProd}`);
 
     // Verificar si ya existe una tarjeta para el producto en el carrito
     if (divCarrito) {
@@ -128,23 +128,26 @@ function cargarTarjetas(element) {
       nuevaTarjeta.id = `producto-${idProd}`;
       nuevaTarjeta.dataset.contador = contador;
       nuevaTarjeta.innerHTML = `
-            <div class="card p-3 m-3" style="width: 16rem; height: 24rem;">
-                <img src="${element.image}" class="card-img-top h-75" alt="...">
-                <div class="card-body">
-                    <h6 class="card-title text-truncate">${element.title}</h6>
-                    <div class="d-flex rounded px-2 h-10">
-                        <p class="fs-6 h-100 py-2 my-auto me-auto precio">$${precioAcumulado.toFixed(
-                          2
-                        )}</p>
-                        <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
-                            <button type="button" class="btn btn-primary ms-auto restar"><i class="bi bi-dash-lg"></i></button>
-                            <button type="button" class="btn btn-outline-secondary contador" disabled>${contador}</button>
-                            <button type="button" class="btn btn-primary sumar"><i class="bi bi-plus-lg"></i></button>
-                        </div>
+        <div class="card p-3 m-3" style="width: 16rem; height: 24rem;">
+            <img src="${element.image}" class="card-img-top h-75" alt="...">
+            <div class="card-body">
+                <h6 class="card-title text-truncate">${element.title}</h6>
+                <div class="d-flex rounded px-2 h-10">
+                    <p class="fs-6 h-100 py-2 my-auto me-auto precio">$${precioAcumulado.toFixed(
+                      2
+                    )}</p>
+                    <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                        <button type="button" class="btn btn-primary ms-auto restar"><i class="bi bi-dash-lg"></i></button>
+                        <button type="button" class="btn btn-outline-secondary contador" disabled>${contador}</button>
+                        <button type="button" class="btn btn-primary sumar"><i class="bi bi-plus-lg"></i></button>
                     </div>
                 </div>
-            </div>`;
+            </div>
+        </div>`;
       carro.appendChild(nuevaTarjeta);
+
+      // Asignar divCarrito después de crearlo
+      divCarrito = nuevaTarjeta;
     }
 
     // Obtener los botones de suma y resta por su clase
@@ -170,7 +173,7 @@ function cargarTarjetas(element) {
       const displayPrecio = divCarrito.querySelector(".precio");
       precioAcumulado = sumarPrecio();
       displayPrecio.textContent = `$${precioAcumulado}`;
-      
+
       // Si el contador llega a 0, elimina la tarjeta del carrito
       if (contador < 1) {
         divCarrito.remove();

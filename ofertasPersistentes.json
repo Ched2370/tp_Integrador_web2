@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "title": "Fjallraven - Mochila Foldsack No. 1, con capacidad para 15 portátiles",
+    "price": 109.95,
+    "description": "Tu mochila perfecta para el uso diario y los paseos por el bosque. Guarde su computadora portátil (hasta 15 pulgadas) en la funda acolchada, su uso diario",
+    "category": "Ropa de Hombre",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 3.9,
+      "count": 120
+    },
+    "oferta": {
+      "porcentaje": 10,
+      "precioConDescuento": "98.95"
+    }
+  },
+  {
+    "id": 5,
+    "title": "John Hardy Pulsera de cadena con estación de dragón dorado y plateado Legends Naga para mujer",
+    "price": 695,
+    "description": "De nuestra colección Legends, el Naga se inspiró en el mítico dragón de agua que protege la perla del océano. Úselo mirando hacia adentro para recibir amor y abundancia, o hacia afuera para protección.",
+    "category": "joyería",
+    "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 400
+    },
+    "oferta": {
+      "porcentaje": 25,
+      "precioConDescuento": "521.25"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Micropavé pequeño de oro macizo",
+    "price": 168,
+    "description": "Satisfacción garantizada. Devuelva o cambie cualquier pedido dentro de los 30 días. Diseñado y vendido por Hafeez Center en los Estados Unidos. Satisfacción garantizada. Devuelva o cambie cualquier pedido dentro de los 30 días.",
+    "category": "joyería",
+    "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 3.9,
+      "count": 70
+    },
+    "oferta": {
+      "porcentaje": 10,
+      "precioConDescuento": "151.20"
+    }
+  },
+  {
+    "id": 10,
+    "title": "SanDisk SSD PLUS 1TB SSD interno - SATA III 6 Gb/s",
+    "price": 109,
+    "description": "Actualización sencilla para un inicio, apagado, carga de aplicaciones y respuesta más rápidos (en comparación con el disco duro SATA de 2,5” de 5400 RPM; basado en especificaciones publicadas y pruebas de evaluación comparativas internas utilizando puntajes PCMark vantage) Aumenta el rendimiento de escritura en ráfaga, lo que lo hace ideal para cargas de trabajo típicas de PC El equilibrio perfecto entre rendimiento y confiabilidad Velocidades de lectura/escritura de hasta 535 MB/s/450 MB/s (según pruebas internas; el rendimiento puede variar según la capacidad de la unidad, el dispositivo host, el sistema operativo y la aplicación).",
+    "category": "electrónica",
+    "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+    "rating": {
+      "rate": 2.9,
+      "count": 470
+    },
+    "oferta": {
+      "porcentaje": 10,
+      "precioConDescuento": "98.10"
+    }
+  },
+  {
+    "id": 11,
+    "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Caché Rendimiento Aumentar SATA III 2.5",
+    "price": 109,
+    "description": "Se aplica flash 3D NAND para ofrecer altas velocidades de transferencia. Velocidades de transferencia notables que permiten un arranque más rápido y un rendimiento general mejorado del sistema. La avanzada tecnología SLC Cache permite aumentar el rendimiento y prolongar la vida útil. Diseño delgado de 7 mm adecuado para Ultrabooks y portátiles ultradelgados. Admite el comando TRIM, la tecnología de recolección de basura, RAID y ECC (comprobación y corrección de errores) para proporcionar un rendimiento optimizado y una confiabilidad mejorada.",
+    "category": "electrónica",
+    "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 319
+    },
+    "oferta": {
+      "porcentaje": 10,
+      "precioConDescuento": "98.10"
+    }
+  },
+  {
+    "id": 12,
+    "title": "La unidad para juegos WD de 4 TB funciona con el disco duro externo portátil Playstation 4",
+    "price": 114,
+    "description": "Amplíe su experiencia de juego en PS4, juegue en cualquier lugar Configuración rápida y sencilla Diseño elegante con alta capacidad, garantía limitada del fabricante de 3 años",
+    "category": "electrónica",
+    "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 400
+    },
+    "oferta": {
+      "porcentaje": 10,
+      "precioConDescuento": "102.60"
+    }
+  },
+  {
+    "id": 13,
+    "title": "Acer SB220Q bi 21,5 pulgadas Full HD (1920 x 1080) IPS ultrafino",
+    "price": 599,
+    "description": "Pantalla IPS panorámica Full HD (1920 x 1080) de 21, 5 pulgadas y tecnología de sincronización gratuita Radeon. No es compatible con montaje VESA Frecuencia de actualización: 75 Hz - Usando puerto HDMI Diseño de marco cero | ultrafino | Tiempo de respuesta de 4 ms | Panel IPS Relación de aspecto: 16: 9. Color admitido: 16, 7 millones de colores. Brillo - 250 nit Ángulo de inclinación -5 grados a 15 grados. Ángulo de visión horizontal: 178 grados. Ángulo de visión vertical: 178 grados 75 hercios",
+    "category": "electrónica",
+    "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
+    "rating": {
+      "rate": 2.9,
+      "count": 250
+    },
+    "oferta": {
+      "porcentaje": 25,
+      "precioConDescuento": "449.25"
+    }
+  },
+  {
+    "id": 14,
+    "title": "Monitor de juegos curvo Samsung CHG90 de 49 pulgadas y 144 Hz (LC49HG90DMNXZA) – Pantalla súper ultraancha QLED",
+    "price": 999.99,
+    "description": "MONITOR PARA JUEGOS CURVO 32:9 SÚPER ULTRAANCHO DE 49 PULGADAS con pantalla dual de 27 pulgadas una al lado de la otra TECNOLOGÍA QUANTUM DOT (QLED), compatibilidad con HDR y calibración de fábrica que proporciona colores y contraste increíblemente realistas y precisos ALTA FRECUENCIA DE ACTUALIZACIÓN de 144 HZ y tiempo de respuesta ultrarrápido de 1 ms para trabajar elimine el desenfoque de movimiento, las imágenes fantasma y reduzca el retraso de entrada",
+    "category": "electrónica",
+    "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+    "rating": {
+      "rate": 2.2,
+      "count": 140
+    },
+    "oferta": {
+      "porcentaje": 25,
+      "precioConDescuento": "749.99"
+    }
+  }
+]
