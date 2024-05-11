@@ -16,7 +16,6 @@ async function agregarOfertas(products) {
     });
 
     const productosConOfertas = await Promise.all(ofertasPromises);
-    console.log(productosConOfertas);
     return productosConOfertas;
   } catch (error) {
     throw new Error(`Error al agregar ofertas a los productos: ${error.message}`);
