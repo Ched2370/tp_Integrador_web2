@@ -1,19 +1,16 @@
 let contadorBabgeItems = 0;
 let sumaCompraTotal = 0;
+
 // localstorage
 // Obtener la lista actual de productos del localStorage
-let productList = JSON.parse(localStorage.getItem('list')) || [];
-productList.forEach(e => {
-  console.log(e.title);
-});
+let productList = JSON.parse(localStorage.getItem("list")) || [];
 
 // Agregar a carrito
 function carrito(element) {
 
+    // Agregar el nuevo elemento a la lista
+    productList.push(element);
 
-  // Agregar el nuevo elemento a la lista
-  productList.push(element);
-  
   // Inicio de clausulas
   let contador = 1;
   let precioAcumulado = parseFloat(element.oferta.precioConDescuento);
@@ -45,7 +42,6 @@ function carrito(element) {
   const idProd = element.id;
   //si colocaba const generaba error divCarrito
   let divCarrito = document.getElementById(`producto-${idProd}`);
-
 
   // Verificar si ya existe una tarjeta para el producto en el carrito
   if (divCarrito) {
@@ -98,6 +94,8 @@ function carrito(element) {
 
   // Agregar eventos de clic a los botones de suma y resta
   btnSumar.addEventListener("click", function () {
+  
+
     contador = contarItem();
     divCarrito.dataset.contador = contador;
     const displayContador = divCarrito.querySelector(".contador");
@@ -121,7 +119,7 @@ function carrito(element) {
       divCarrito.remove();
     }
   });
-
-    // Guardar la lista actualizada en el localStorage
-    localStorage.setItem('list', JSON.stringify(productList));
+  // Guardar la lista actualizada en el localStorage
+  localStorage.setItem("list", JSON.stringify(productList));
 }
+

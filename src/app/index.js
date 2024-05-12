@@ -5,7 +5,7 @@ const app = express();
 const publicPath = __dirname.replace('app', 'public');
 const router = require('./router/router');
 
-app.set('port', process.env.PORT || 3030);
+app.set('port', process.env.PORT || 5040);
 app.set(morgan);
 app.set('views', `${publicPath}/templates`);
 app.set("view engine", "pug");

@@ -1,16 +1,13 @@
 const div_container = document.getElementById("card");
 
 function cargarTarjetas(element) {
-
   /*agregar funsion filtro para buscador*/
 
-
-  
   const div_card = document.createElement("div");
   div_card.className = "text-bg-light p-3 rounded position-relative tarjeta";
-  div_card.id = `tarjeta-${element.id}`
-  div_card.style.maxWidth = "clamp(16rem, 20rem, 24rem)";
-  div_card.style.height = "35rem";
+  div_card.id = `tarjeta-${element.id}`;
+  div_card.style.maxWidth = "clamp(18rem, 18%, 24rem)";
+  div_card.style.height = "32rem";
   div_card.style.cursor = "pointer";
 
   const img = document.createElement("img");
@@ -19,22 +16,25 @@ function cargarTarjetas(element) {
 
   // creo overlay sobre imagen para mostrar el % de ofertas
   const cardOverlay = document.createElement("div");
-  cardOverlay.className = "card-img-overlay pt-5 mt-5 h-50";
+  cardOverlay.className = "card-img-overlay py-5 my-xxl-3 my-4 h-50";
 
   const porcentajeOferta = document.createElement("p");
-  porcentajeOferta.className = `p-2 text-bg-danger bg-opacity-50 fs-2 p-3 mt-5`;
+  porcentajeOferta.className = `p-2 text-bg-danger bg-opacity-50 fs-2 p-3 mt-3`;
   porcentajeOferta.innerHTML = `<strong>OFERTA<br> ${element.oferta.porcentaje}% OFF</strong>`;
 
   const cardBody = document.createElement("div");
   cardBody.className = "card-body";
 
   const title = document.createElement("h6");
-  title.className = "card-title my-3 px-2 py-0 fs-6";
+  title.className = "card-title mt-4 px-1 py-0";
   title.textContent = element.title;
 
   const descripcion = document.createElement("p");
   descripcion.className = "card-text px-2 py-2";
-  const desc = element.description.length > 30 ? element.description.slice(0, 30 - element.description.length) + '...' : element.description;
+  const desc =
+    element.description.length > 30
+      ? element.description.slice(0, 30 - element.description.length) + "..."
+      : element.description;
   descripcion.textContent = desc;
 
   const cont_pre_btn = document.createElement("div");
@@ -47,16 +47,15 @@ function cargarTarjetas(element) {
     precio.innerHTML = `<b>Categoria: <b>${element.category}<br> 
                           <b>Precio: <b><span class="text-decoration-line-through text-bg-secondary rounded px-1">$${element.price}</span><br>
                           <b>Oferta: <b><span class="text-bg-danger rounded px-1">$${element.oferta.precioConDescuento}</span><br>
-                          <b>Ranking: <b>${element.rating.rate}<br>
+                          <b>Te ahorras: <b><span class="text-bg-success rounded px-1">$${(element.price - element.oferta.precioConDescuento).toFixed(2)}</span><br>
                           `;
   } else {
     precio.innerHTML = `<b>Categoria: <b>${element.category}<br> 
                           <b>Precio: <b><span class="text-bg-secondary rounded px-1">$${element.price}</span><br>
-                          <b>Ranking: <b>${element.rating.rate}<br>
                           `;
   }
 
-  const btnAgregar = document.createElement("button"); // Corregido aquí
+  const btnAgregar = document.createElement("button");
   btnAgregar.className =
     "btn btn-primary position-absolute top-0 end-0 m-3 btnAgregar";
   btnAgregar.id = `btn${element.id}`;
@@ -80,15 +79,14 @@ function cargarTarjetas(element) {
   btnAgregar.addEventListener("click", async () => {
     await carrito(element);
   });
-  
+
   div_card.addEventListener("mouseover", () => {
     descripcion.textContent = element.description;
-    cardBody.className = 'desc';
+    cardBody.className = "desc";
   });
 
   div_card.addEventListener("mouseout", async () => {
     descripcion.textContent = desc;
-    cardBody.classList.remove('desc');
+    cardBody.classList.remove("desc");
   });
-
 }
