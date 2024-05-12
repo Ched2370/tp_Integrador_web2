@@ -1,15 +1,25 @@
 let contadorBabgeItems = 0;
 let sumaCompraTotal = 0;
+// localstorage
+// Obtener la lista actual de productos del localStorage
+let productList = JSON.parse(localStorage.getItem('list')) || [];
+productList.forEach(e => {
+  console.log(e.title);
+});
 
 // Agregar a carrito
 function carrito(element) {
+
+
+  // Agregar el nuevo elemento a la lista
+  productList.push(element);
+  
   // Inicio de clausulas
   let contador = 1;
   let precioAcumulado = parseFloat(element.oferta.precioConDescuento);
   // Función para sumar el precio
   function sumarPrecio() {
-    precioAcumulado =
-      parseFloat(element.oferta.precioConDescuento) * contador;
+    precioAcumulado = parseFloat(element.oferta.precioConDescuento) * contador;
     return precioAcumulado.toFixed(2);
   }
 
@@ -35,6 +45,7 @@ function carrito(element) {
   const idProd = element.id;
   //si colocaba const generaba error divCarrito
   let divCarrito = document.getElementById(`producto-${idProd}`);
+
 
   // Verificar si ya existe una tarjeta para el producto en el carrito
   if (divCarrito) {
@@ -110,4 +121,7 @@ function carrito(element) {
       divCarrito.remove();
     }
   });
-};
+
+    // Guardar la lista actualizada en el localStorage
+    localStorage.setItem('list', JSON.stringify(productList));
+}

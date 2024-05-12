@@ -4,10 +4,13 @@ function cargarTarjetas(element) {
 
   /*agregar funsion filtro para buscador*/
 
+
+  
   const div_card = document.createElement("div");
-  div_card.className = "text-bg-light p-3 rounded position-relative";
-  div_card.style.maxWidth = "20rem";
-  div_card.style.minHeight = "32rem";
+  div_card.className = "text-bg-light p-3 rounded position-relative tarjeta";
+  div_card.id = `tarjeta-${element.id}`
+  div_card.style.maxWidth = "clamp(16rem, 20rem, 24rem)";
+  div_card.style.height = "35rem";
   div_card.style.cursor = "pointer";
 
   const img = document.createElement("img");
@@ -16,29 +19,30 @@ function cargarTarjetas(element) {
 
   // creo overlay sobre imagen para mostrar el % de ofertas
   const cardOverlay = document.createElement("div");
-  cardOverlay.className = "card-img-overlay py-5";
+  cardOverlay.className = "card-img-overlay pt-5 mt-5 h-50";
 
   const porcentajeOferta = document.createElement("p");
   porcentajeOferta.className = `p-2 text-bg-danger bg-opacity-50 fs-2 p-3 mt-5`;
-  porcentajeOferta.innerHTML = `<strong>OFERTA ${element.oferta.porcentaje}% OFF</strong>`;
+  porcentajeOferta.innerHTML = `<strong>OFERTA<br> ${element.oferta.porcentaje}% OFF</strong>`;
 
   const cardBody = document.createElement("div");
   cardBody.className = "card-body";
 
   const title = document.createElement("h6");
-  title.className = "card-title my-3 px-2 py-0";
+  title.className = "card-title my-3 px-2 py-0 fs-6";
   title.textContent = element.title;
 
   const descripcion = document.createElement("p");
-  descripcion.className = "card-text text-truncate px-2 py-0 h-75 mb-5 fs-6";
-  descripcion.textContent = element.description;
+  descripcion.className = "card-text px-2 py-2";
+  const desc = element.description.length > 30 ? element.description.slice(0, 30 - element.description.length) + '...' : element.description;
+  descripcion.textContent = desc;
 
   const cont_pre_btn = document.createElement("div");
   cont_pre_btn.className =
     "card-footer position-absolute bottom-0 start-50 translate-middle-x w-100 p-0 h-25";
 
   const precio = document.createElement("p");
-  precio.className = "text-bg-warning p-3 fs-6 h-75 py-2";
+  precio.className = "text-bg-warning p-3 h-100 py-2 rounded";
   if (element.price > 100) {
     precio.innerHTML = `<b>Categoria: <b>${element.category}<br> 
                           <b>Precio: <b><span class="text-decoration-line-through text-bg-secondary rounded px-1">$${element.price}</span><br>
@@ -75,6 +79,16 @@ function cargarTarjetas(element) {
 
   btnAgregar.addEventListener("click", async () => {
     await carrito(element);
-});
+  });
+  
+  div_card.addEventListener("mouseover", () => {
+    descripcion.textContent = element.description;
+    cardBody.className = 'desc';
+  });
+
+  div_card.addEventListener("mouseout", async () => {
+    descripcion.textContent = desc;
+    cardBody.classList.remove('desc');
+  });
 
 }

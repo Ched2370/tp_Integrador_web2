@@ -11,12 +11,14 @@ header.container-fluit.header
           button.btn.btn-outline-success(type='submit') Buscar
         ul.navbar-nav.ms-auto.mb-2.mb-lg-0-mx-auto.w-50.d-flex.justify-content-evenly 
           li.nav-item
-            a.nav-link.active(aria-current='page', href='#') Inicio
-          li.nav-item
-            a.nav-link(href='#') Ofertas
+            a.nav-link.active(aria-current='page', href='/') Inicio
           li.nav-item.dropdown
             a.nav-link.dropdown-toggle(href='#', role='button', data-bs-toggle='dropdown', aria-expanded='false') Categoria
             ul.dropdown-menu
+              li
+                a.dropdown-item(href='#') Todo
+              li
+                hr.dropdown-divider
               li
                 a.dropdown-item(href='#') Tecno
               li
@@ -29,8 +31,12 @@ header.container-fluit.header
                 a.dropdown-item(href='#') Ropa para hombre
               li
                 a.dropdown-item(href='#') Ropa para mujer
+              li
+                hr.dropdown-divider
+              li
+                a.dropdown-item(href='#') Ofertas
           li.nav-item
-            .btn Compras
+            button.btn.btn-light(data-bs-target="#compras", data-bs-toggle="modal") Compras
           li.nav-item
           a
             i.btn.btn-primary(type="button", data-bs-toggle="offcanvas", data-bs-target="#offcanvasRight", aria-controls="offcanvasRight").bi.bi-cart-fill
