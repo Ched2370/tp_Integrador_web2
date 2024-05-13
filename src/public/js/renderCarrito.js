@@ -1,36 +1,29 @@
+const carro = document.getElementById("carrito");
 let contadorBabgeItems = 0;
 let sumaCompraTotal = 0;
 
-// localstorage
-// Obtener la lista actual de productos del localStorage
-let productList = JSON.parse(localStorage.getItem("list")) || [];
-
-// Agregar a carrito
 function carrito(element) {
-
-    // Agregar el nuevo elemento a la lista
-    productList.push(element);
-
-  // Inicio de clausulas
+  let compra = JSON.parse(localStorage.getItem('lista')) || [];
   let contador = 1;
+
   let precioAcumulado = parseFloat(element.oferta.precioConDescuento);
-  // Función para sumar el precio
+
   function sumarPrecio() {
     precioAcumulado = parseFloat(element.oferta.precioConDescuento) * contador;
     return precioAcumulado.toFixed(2);
   }
 
-  // Función para contar los items
   function contarItem() {
     contador++;
+    agregarAlStorage();
     return contador;
   }
 
-  // Función para restar los items
   function restarItem() {
     if (contador > 0) {
       contador--;
       precioAcumulado -= element.oferta.precioConDescuento;
+      agregarAlStorage();
     } else {
       contador = 0;
       precioAcumulado = 0;
@@ -38,14 +31,10 @@ function carrito(element) {
     return contador;
   }
 
-  const carro = document.getElementById("carrito");
   const idProd = element.id;
-  //si colocaba const generaba error divCarrito
   let divCarrito = document.getElementById(`producto-${idProd}`);
 
-  // Verificar si ya existe una tarjeta para el producto en el carrito
   if (divCarrito) {
-    // Si ya existe, incrementar el contador y actualizar la información en esa tarjeta
     contador = parseInt(divCarrito.dataset.contador) + 1;
     divCarrito.dataset.contador = contador;
     const displayContador = divCarrito.querySelector(".contador");
@@ -54,7 +43,6 @@ function carrito(element) {
     precioAcumulado = sumarPrecio();
     displayPrecio.textContent = `$${precioAcumulado}`;
   } else {
-    // Si no existe, crear una nueva tarjeta y agregarla al carrito
     const nuevaTarjeta = document.createElement("div");
     nuevaTarjeta.classList.add(
       "container-fluid",
@@ -83,43 +71,94 @@ function carrito(element) {
           </div>
       </div>`;
     carro.appendChild(nuevaTarjeta);
-
-    // Asignar divCarrito después de crearlo
     divCarrito = nuevaTarjeta;
   }
 
-  // Obtener los botones de suma y resta por su clase
   const btnSumar = document.querySelector(`#producto-${idProd} .sumar`);
   const btnRestar = document.querySelector(`#producto-${idProd} .restar`);
 
-  // Agregar eventos de clic a los botones de suma y resta
   btnSumar.addEventListener("click", function () {
-  
-
     contador = contarItem();
     divCarrito.dataset.contador = contador;
+
     const displayContador = divCarrito.querySelector(".contador");
     displayContador.textContent = contador;
     precioAcumulado = sumarPrecio();
+
     const displayPrecio = divCarrito.querySelector(".precio");
     displayPrecio.textContent = `$${precioAcumulado}`;
-  });
+    element.cantidad = contador;
+ 
 
+  });
+  
   btnRestar.addEventListener("click", function () {
+
     contador = restarItem();
     divCarrito.dataset.contador = contador;
+
     const displayContador = divCarrito.querySelector(".contador");
     displayContador.textContent = contador;
+
     const displayPrecio = divCarrito.querySelector(".precio");
     precioAcumulado = sumarPrecio();
     displayPrecio.textContent = `$${precioAcumulado}`;
 
-    // Si el contador llega a 0, elimina la tarjeta del carrito
+    console.log(`contador en: ${contador}`);
     if (contador < 1) {
       divCarrito.remove();
+    } else {
+      element.cantidad = contador; 
+
     }
+
   });
-  // Guardar la lista actualizada en el localStorage
-  localStorage.setItem("list", JSON.stringify(productList));
+
+  //para saber si existe items en el localstorage
+  function propiedadExiste() {
+    for (const item of compra) {
+      if (item.id === element.id) {
+        return true;
+      }
+    }
+    return false;
+  }
+  
+
+  function agregarAlStorage() {
+    if (contador === 0) {
+      // Si la cantidad es 0, eliminar el elemento del carrito
+      for (let i = 0; i < compra.length; i++) {
+        if (compra[i].id === element.id) {
+          compra.splice(i, 1); // Remover el elemento del array
+          break;
+        }
+      }
+    } else {
+      if (!propiedadExiste()) {
+        //console.log('El elemento no existe en el almacenamiento local');
+        element.cantidad = contador;
+        compra.push(element);
+      } else {
+        //console.log('El elemento ya existe en el almacenamiento local');
+        // Modificar la propiedad cantidad del elemento existente
+        for (const item of compra) {
+          if (item.id === element.id) {
+            item.cantidad = contador;
+            break;
+          }
+        }
+      }
+    }
+    const storage = JSON.stringify(compra);
+    localStorage.setItem('lista', storage);
+  }
+  agregarAlStorage();
 }
 
+if (localStorage.getItem('lista')) {
+  const lista = JSON.parse(localStorage.getItem('lista'));
+  lista.forEach(async e => {
+    await carrito(e);
+  });
+}

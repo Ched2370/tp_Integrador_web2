@@ -80,6 +80,9 @@ function cargarTarjetas(element) {
     await carrito(element);
   });
 
+
+  
+
   div_card.addEventListener("mouseover", () => {
     descripcion.textContent = element.description;
     cardBody.className = "desc";
