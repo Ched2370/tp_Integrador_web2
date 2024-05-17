@@ -6,12 +6,6 @@ btnCompra.addEventListener('click', () => {
         return;
     }
 
-    /* let totalAPagar = storageData.reduce( (acc, item) => {
-        return acc = acc + (parseFloat(item.oferta.precioConDescuento) * item.cantidad);
-    }, 0)
-
-    console.log(parseFloat(totalAPagar).toFixed(2)); */
-
     fetch('/compra', {
         method: 'POST',
         headers: {
@@ -25,6 +19,14 @@ btnCompra.addEventListener('click', () => {
                 throw new Error(`Error en la respuesta del servidor: ${response.status} - ${response.statusText}: ${text}`);
             });
         }
+
+        storageData.forEach(element => {
+            const idProd = element.id;
+            let divCarrito = document.getElementById(`producto-${idProd}`);
+            if (divCarrito) {
+                divCarrito.remove();
+            }
+        });
         return response.json();
     })
     .then(data => {

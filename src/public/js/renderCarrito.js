@@ -1,167 +1,119 @@
 const carro = document.getElementById("carrito");
+const carritoContainer = document.getElementById("carrito"); // Cambio de ID a carritoContainer
 
-const invocarCarrito = function carrito(element, contador = 1) {
-  let compra = JSON.parse(localStorage.getItem('lista')) || [];
+const crearCard = function agregarNuevoProducto(element) {
+    let storage = JSON.parse(localStorage.getItem('lista')) || [];
 
-  console.log(`contador inicio = ${contador}`);
+    // Verificar si el elemento ya está en el storage
+    let itemEnStorage = storage.find(e => e.id === element.id);
 
-  let precioAcumulado = parseFloat(element.oferta.precioConDescuento);
-
-  function sumarPrecio() {
-    precioAcumulado = parseFloat(element.oferta.precioConDescuento) * contador;
-    return precioAcumulado.toFixed(2);
-  }
-
-  function contarItem() {
-    contador++;
-    agregarAlStorage();
-    return contador;
-  }
-
-  function restarItem() {
-    if (contador > 0) {
-      contador--;
-      precioAcumulado -= element.oferta.precioConDescuento;
-      agregarAlStorage();
+    if (itemEnStorage) {
+        element.cantidad = itemEnStorage.cantidad;
     } else {
-      contador = 0;
-      precioAcumulado = 0;
+        element.cantidad = 1;
     }
-    return contador;
-  }
 
-  const idProd = element.id;
-  let divCarrito = document.getElementById(`producto-${idProd}`);
+    const idProd = element.id;
+    let divCarrito = document.getElementById(`producto-${idProd}`);
 
-  if (divCarrito) {
-    contador = parseInt(divCarrito.dataset.contador) + 1;
-    divCarrito.dataset.contador = contador;
+    const crearTarjeta = () => {
+        const nuevaTarjeta = document.createElement("div");
+        nuevaTarjeta.classList.add(
+            "container-fluid",
+            "d-flex",
+            "justify-content-center",
+            "row",
+            "producto"
+        );
+        nuevaTarjeta.id = `producto-${idProd}`;
+        nuevaTarjeta.innerHTML = `
+            <div class="card p-3 m-3" style="width: 16rem; height: 24rem;">
+                <img src="${element.image}" class="card-img-top h-75" alt="...">
+                <div class="card-body">
+                    <h6 class="card-title text-truncate">${element.title}</h6>
+                    <div class="d-flex rounded px-2 h-10">
+                        <p class="fs-6 h-100 py-2 my-auto me-auto precio">$${(parseFloat(element.oferta.precioConDescuento) * element.cantidad).toFixed(2)}</p>
+                        <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                            <button type="button" class="btn btn-primary ms-auto restar"><i class="bi bi-dash-lg"></i></button>
+                            <button type="button" class="btn btn-outline-secondary contador" disabled>${element.cantidad}</button>
+                            <button type="button" class="btn btn-primary sumar"><i class="bi bi-plus-lg"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+        carro.appendChild(nuevaTarjeta);
+        divCarrito = nuevaTarjeta;
 
-    const displayContador = divCarrito.querySelector(".contador");
-    displayContador.textContent = contador;
-    
-    const displayPrecio = divCarrito.querySelector(".precio");
-    precioAcumulado = sumarPrecio();
-    displayPrecio.textContent = `$${precioAcumulado}`;
-  } else {
-    const nuevaTarjeta = document.createElement("div");
-    nuevaTarjeta.classList.add(
-      "container-fluid",
-      "d-flex",
-      "justify-content-center",
-      "row",
-      "producto"
-    );
-    nuevaTarjeta.id = `producto-${idProd}`;
-    nuevaTarjeta.dataset.contador = contador;
-    nuevaTarjeta.innerHTML = `
-      <div class="card p-3 m-3" style="width: 16rem; height: 24rem;">
-          <img src="${element.image}" class="card-img-top h-75" alt="...">
-          <div class="card-body">
-              <h6 class="card-title text-truncate">${element.title}</h6>
-              <div class="d-flex rounded px-2 h-10">
-                  <p class="fs-6 h-100 py-2 my-auto me-auto precio">$${precioAcumulado.toFixed(
-                    2
-                  )}</p>
-                  <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
-                      <button type="button" class="btn btn-primary ms-auto restar"><i class="bi bi-dash-lg"></i></button>
-                      <button type="button" class="btn btn-outline-secondary contador" disabled>${contador}</button>
-                      <button type="button" class="btn btn-primary sumar"><i class="bi bi-plus-lg"></i></button>
-                  </div>
-              </div>
-          </div>
-      </div>`;
-    carro.appendChild(nuevaTarjeta);
-    divCarrito = nuevaTarjeta;
-  }
+        // Añadir manejadores de eventos para los botones de incremento y decremento
+        divCarrito.querySelector('.sumar').addEventListener('click', () => {
+            element.cantidad++;
+            actualizarCantidad(element);
+        });
 
-  const btnSumar = document.querySelector(`#producto-${idProd} .sumar`);
-  const btnRestar = document.querySelector(`#producto-${idProd} .restar`);
-
-  btnSumar.addEventListener("click", function () {
-    contador = contarItem();
-    divCarrito.dataset.contador = contador;
-
-    const displayContador = divCarrito.querySelector(".contador");
-    displayContador.textContent = contador;
-    precioAcumulado = sumarPrecio();
-
-    const displayPrecio = divCarrito.querySelector(".precio");
-    displayPrecio.textContent = `$${precioAcumulado}`;
-    element.cantidad = contador;
- 
-
-  });
-  
-  btnRestar.addEventListener("click", function () {
-
-    contador = restarItem();
-    divCarrito.dataset.contador = contador;
-
-    const displayContador = divCarrito.querySelector(".contador");
-    displayContador.textContent = contador;
-
-    const displayPrecio = divCarrito.querySelector(".precio");
-    precioAcumulado = sumarPrecio();
-    displayPrecio.textContent = `$${precioAcumulado}`;
-
-    console.log(`${contador}`);
-  
-    if (!contador > 0) {
-      divCarrito.remove();
-      // Eliminar el elemento del localStorage si el contador llega a cero
-      compra = compra.filter(item => item.id !== element.id);
-      localStorage.setItem('lista', JSON.stringify(compra));
-    } else {
-      element.cantidad = contador; 
+        divCarrito.querySelector('.restar').addEventListener('click', () => {
+            element.cantidad--;
+            actualizarCantidad(element);
+            if (element.cantidad === 0) {
+                eliminarProducto(element.id);
+            }
+        });
     }
-  });
 
-  //para saber si existe el item en el localstorage
-  function propiedadExiste() {
-    for (const item of compra) {
-      if (item.id === element.id) {
-        return true;
-      }
-    }
-    return false;
-  }
-  
+    const actualizarCantidad = (element) => {
+        let storage = JSON.parse(localStorage.getItem('lista')) || [];
+        let itemIndex = storage.findIndex(e => e.id === element.id);
 
-  function agregarAlStorage() {
-    if (contador === 0) {
-      // Si la cantidad es 0, eliminar el elemento del carrito
-      for (let i = 0; i < compra.length; i++) {
-        if (compra[i].id === element.id) {
-          compra.splice(i, 1); // Remover el elemento del array
-          break;
+        if (itemIndex !== -1) {
+            storage[itemIndex].cantidad = element.cantidad;
+            if (element.cantidad === 0) {
+                storage.splice(itemIndex, 1); // Eliminar el elemento del array si la cantidad es 0
+            }
+        } else {
+            storage.push(element);
         }
-      }
-    } else {
-      if (!propiedadExiste()) {
-        //console.log('El elemento no existe en el almacenamiento local');
-        element.cantidad = contador;
-        compra.push(element);
-      } else {
-        //console.log('El elemento ya existe en el almacenamiento local');
-        // Modificar la propiedad cantidad del elemento existente
-        for (const item of compra) {
-          if (item.id === element.id) {
-            item.cantidad = contador;
-            break;
-          }
+
+        localStorage.setItem('lista', JSON.stringify(storage));
+        if (element.cantidad > 0) {
+            document.getElementById(`producto-${element.id}`).querySelector('.contador').innerText = element.cantidad;
+            document.getElementById(`producto-${element.id}`).querySelector('.precio').innerText = `$${(parseFloat(element.oferta.precioConDescuento) * element.cantidad).toFixed(2)}`;
         }
-      }
     }
-    localStorage.setItem('lista', JSON.stringify(compra));
-  }
-  agregarAlStorage();
+
+    const eliminarProducto = (id) => {
+        let divCarrito = document.getElementById(`producto-${id}`);
+        if (divCarrito) {
+            divCarrito.remove();
+        }
+    }
+
+    if (divCarrito) {
+        // Si la tarjeta ya existe, solo actualizar la cantidad
+        divCarrito.querySelector('.contador').innerText = element.cantidad;
+        divCarrito.querySelector('.precio').innerText = `$${(parseFloat(element.oferta.precioConDescuento) * element.cantidad).toFixed(2)}`;
+    } else {
+        crearTarjeta();
+    }
+
+    // Función para agregar al storage
+    (function agregarAlStorage() {
+        if (itemEnStorage) {
+            // Si el item ya está en el storage, actualizar la cantidad
+            itemEnStorage.cantidad = element.cantidad;
+        } else {
+            // Si el item no está en el storage, añadirlo
+            storage.push(element);
+        }
+        localStorage.setItem('lista', JSON.stringify(storage));
+    })();
 }
 
-if (localStorage.getItem('lista')) {
-  const lista = JSON.parse(localStorage.getItem('lista'));
-  lista.forEach(async e => {
-    await invocarCarrito(e, e.cantidad);
-  });
+// Función para cargar los productos desde localStorage al cargar la página
+const cargarProductosDesdeStorage = () => {
+    let storage = JSON.parse(localStorage.getItem('lista')) || [];
+    storage.forEach(element => {
+        crearCard(element);
+    });
 }
 
+// Llamar a la función para cargar los productos cuando se carga la página
+document.addEventListener('DOMContentLoaded', cargarProductosDesdeStorage);

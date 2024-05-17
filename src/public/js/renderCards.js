@@ -79,7 +79,8 @@ function cargarTarjetas(element) {
 
 
   btnAgregar.addEventListener("click", async () => {
-    const storage = JSON.parse(localStorage.getItem('list'));
+    crearCard(element);
+ /*    const storage = JSON.parse(localStorage.getItem('list'));
 
     if (!storage) {
       console.log('localstorage');
@@ -92,7 +93,7 @@ function cargarTarjetas(element) {
       } else {
         await invocarCarrito(element);
       }
-    }
+    } */
   });
   
   
