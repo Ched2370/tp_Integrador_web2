@@ -8,3 +8,6 @@ fetch("/products")
   .catch((err) => {
     throw new Error(`error al conectar la api: ${err.message}`);
   });
+
+
+  

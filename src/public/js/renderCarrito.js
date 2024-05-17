@@ -1,10 +1,9 @@
 const carro = document.getElementById("carrito");
-let contadorBabgeItems = 0;
-let sumaCompraTotal = 0;
 
-function carrito(element) {
+const invocarCarrito = function carrito(element, contador = 1) {
   let compra = JSON.parse(localStorage.getItem('lista')) || [];
-  let contador = 1;
+
+  console.log(`contador inicio = ${contador}`);
 
   let precioAcumulado = parseFloat(element.oferta.precioConDescuento);
 
@@ -37,8 +36,10 @@ function carrito(element) {
   if (divCarrito) {
     contador = parseInt(divCarrito.dataset.contador) + 1;
     divCarrito.dataset.contador = contador;
+
     const displayContador = divCarrito.querySelector(".contador");
     displayContador.textContent = contador;
+    
     const displayPrecio = divCarrito.querySelector(".precio");
     precioAcumulado = sumarPrecio();
     displayPrecio.textContent = `$${precioAcumulado}`;
@@ -104,17 +105,19 @@ function carrito(element) {
     precioAcumulado = sumarPrecio();
     displayPrecio.textContent = `$${precioAcumulado}`;
 
-    console.log(`contador en: ${contador}`);
-    if (contador < 1) {
+    console.log(`${contador}`);
+  
+    if (!contador > 0) {
       divCarrito.remove();
+      // Eliminar el elemento del localStorage si el contador llega a cero
+      compra = compra.filter(item => item.id !== element.id);
+      localStorage.setItem('lista', JSON.stringify(compra));
     } else {
       element.cantidad = contador; 
-
     }
-
   });
 
-  //para saber si existe items en el localstorage
+  //para saber si existe el item en el localstorage
   function propiedadExiste() {
     for (const item of compra) {
       if (item.id === element.id) {
@@ -150,8 +153,7 @@ function carrito(element) {
         }
       }
     }
-    const storage = JSON.stringify(compra);
-    localStorage.setItem('lista', storage);
+    localStorage.setItem('lista', JSON.stringify(compra));
   }
   agregarAlStorage();
 }
@@ -159,6 +161,7 @@ function carrito(element) {
 if (localStorage.getItem('lista')) {
   const lista = JSON.parse(localStorage.getItem('lista'));
   lista.forEach(async e => {
-    await carrito(e);
+    await invocarCarrito(e, e.cantidad);
   });
 }
+

@@ -75,19 +75,35 @@ function cargarTarjetas(element) {
   div_card.appendChild(cont_pre_btn);
   cont_pre_btn.appendChild(precio);
   div_card.appendChild(btnAgregar);
-
-  btnAgregar.addEventListener("click", async () => {
-    await carrito(element);
-  });
-
-
   
 
+
+  btnAgregar.addEventListener("click", async () => {
+    const storage = JSON.parse(localStorage.getItem('list'));
+
+    if (!storage) {
+      console.log('localstorage');
+      await invocarCarrito(element);
+    } else {
+      const item = storage.find(e => e.id === element.id);
+      console.log(item);
+      if (item) {
+        await invocarCarrito(item, item.cantidad);
+      } else {
+        await invocarCarrito(element);
+      }
+    }
+  });
+  
+  
+
+  // muestra descripcion
   div_card.addEventListener("mouseover", () => {
     descripcion.textContent = element.description;
     cardBody.className = "desc";
   });
 
+  // trunca la descripcion
   div_card.addEventListener("mouseout", async () => {
     descripcion.textContent = desc;
     cardBody.classList.remove("desc");

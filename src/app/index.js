@@ -1,16 +1,23 @@
 const express = require('express');
-const morgan = require('morgan')
+const morgan = require('morgan');
 const app = express();
 
 const publicPath = __dirname.replace('app', 'public');
 const router = require('./router/router');
 
-app.set('port', process.env.PORT || 5040);
-app.set(morgan);
-app.set('views', `${publicPath}/templates`);
-app.set("view engine", "pug");
+// Configuración del puerto
+app.set('port', process.env.PORT || 5041);
 
-app.use(express.static(publicPath))
-app.use('/', router)
+// Configuración de vistas
+app.set('views', `${publicPath}/templates`);
+app.set('view engine', 'pug');
+
+// Middlewares
+app.use(morgan('dev')); 
+app.use(express.json());
+app.use(express.static(publicPath));
+
+// Rutas
+app.use('/', router);
 
 module.exports = app;
