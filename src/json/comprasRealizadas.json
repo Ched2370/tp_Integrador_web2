@@ -1,7 +1,8 @@
 [
   {
-    "id": 1,
-    "fecha": "2024-05-17T05:58:13.564Z",
+    "id": 0,
+    "fecha": "2024-05-17T14:52:32.149Z",
+    "total": "319.15",
     "productos": {
       "0": {
         "id": 1,
@@ -18,15 +19,9 @@
           "porcentaje": 10,
           "precioConDescuento": "98.95"
         },
-        "cantidad": 1
-      }
-    }
-  },
-  {
-    "id": 1,
-    "fecha": "2024-05-17T05:58:32.297Z",
-    "productos": {
-      "0": {
+        "cantidad": 3
+      },
+      "1": {
         "id": 2,
         "title": "Camisetas ajustadas premium informales para hombre",
         "price": 22.3,

@@ -33,23 +33,31 @@ router.post("/compra", async (req, res) => {
     console.log("Llego al server");
     let compra = req.body;
 
-    let comprasData = await fs.readFile('src/json/comprasRealizadas.json', 'utf-8');
+    let comprasData = await fs.readFile('src/json/comprasRealizadas.json');
     let compras = JSON.parse(comprasData);
     
+    let ids = compras.map(e => e.id);
+    
+    let compraId;
 
+    console.log('el ultimo ID es:' +  Math.max(...ids));
+    if (ids === null || ids.length == 0) {
+      compraId = 0;
+    } else {
+      compraId = Math.max(...ids) + 1;
+    }
+    
+    let totalAPagar = compra.reduce((acc, item) => { return acc = acc + (parseFloat(item.oferta.precioConDescuento) * item.cantidad)}, 0);
     
 
     compras.push({
       id: compraId,
       fecha: new Date(),
+      total: parseFloat(totalAPagar).toFixed(2),
       productos: { ...compra }
     });
 
     await fs.writeFile('src/json/comprasRealizadas.json', JSON.stringify(compras, null, 2));
-
-    compra.forEach(item => {
-      console.log("ID del producto:", item.id);
-    });
 
     res.json({ text: "Llega bien hasta el final" });
   } catch (err) {

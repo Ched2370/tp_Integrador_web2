@@ -2,13 +2,15 @@ const btnCompra = document.getElementById('btnComprar');
 btnCompra.addEventListener('click', () => {
     let storageData = JSON.parse(localStorage.getItem('lista'));
     if (!storageData || storageData.length === 0) {
-        alert('No hay elementos en la lista de compra');
+        console.log('No hay elementos en la lista de compra');
         return;
     }
 
-    storageData.forEach(e => {
-        console.log(e);
-    });
+    /* let totalAPagar = storageData.reduce( (acc, item) => {
+        return acc = acc + (parseFloat(item.oferta.precioConDescuento) * item.cantidad);
+    }, 0)
+
+    console.log(parseFloat(totalAPagar).toFixed(2)); */
 
     fetch('/compra', {
         method: 'POST',
