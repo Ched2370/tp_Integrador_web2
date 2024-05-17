@@ -2,11 +2,11 @@ async function agregarOfertas(products) {
   try {
     const ofertasPromises = products.map(async (product) => {
       let oferta = 0;
-      if (product.price > 100 && product.price < 500) {
+/*       if (product.price > 100 && product.price < 500) {
         oferta = 0.1;
       } else if (product.price > 500) {
         oferta = 0.25;
-      }
+      }  */
       const precioConDescuento = product.price * (1 - oferta);
       product.oferta = {
         porcentaje: oferta * 100,

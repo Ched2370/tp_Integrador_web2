@@ -435,5 +435,121 @@
         "cantidad": 2
       }
     }
+  },
+  {
+    "id": 9,
+    "fecha": "2024-05-17T20:03:04.160Z",
+    "total": "188.24",
+    "productos": {
+      "0": {
+        "id": 1,
+        "title": "Fjallraven - Mochila Foldsack No. 1, con capacidad para 15 portátiles",
+        "price": 109.95,
+        "description": "Tu mochila perfecta para el uso diario y los paseos por el bosque. Guarde su computadora portátil (hasta 15 pulgadas) en la funda acolchada, su uso diario",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "rating": {
+          "rate": 3.9,
+          "count": 120
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "109.95"
+        },
+        "cantidad": 1
+      },
+      "1": {
+        "id": 2,
+        "title": "Camisetas ajustadas premium informales para hombre",
+        "price": 22.3,
+        "description": "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable. Y camisas con costuras sólidas y cuello redondo hechas para mayor durabilidad y un excelente ajuste para ropa de moda informal y fanáticos acérrimos del béisbol. El escote redondo estilo Henley incluye una tapeta de tres botones.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        "rating": {
+          "rate": 4.1,
+          "count": 259
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "22.30"
+        },
+        "cantidad": 1
+      },
+      "2": {
+        "id": 3,
+        "title": "Chaqueta de algodón para hombre",
+        "price": 55.99,
+        "description": "Excelentes chaquetas de abrigo para primavera/otoño/invierno, adecuadas para muchas ocasiones, como trabajar, hacer caminatas, acampar, escalar montañas/rocas, andar en bicicleta, viajar u otras actividades al aire libre. Buena opción de regalo para usted o su familiar. Un amor de corazón cálido para el padre, esposo o hijo en este día de acción de gracias o Navidad.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+        "rating": {
+          "rate": 4.7,
+          "count": 500
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "55.99"
+        },
+        "cantidad": 1
+      }
+    }
+  },
+  {
+    "id": 10,
+    "fecha": "2024-05-17T20:22:37.553Z",
+    "total": "761.19",
+    "productos": {
+      "0": {
+        "id": 1,
+        "title": "Fjallraven - Mochila Foldsack No. 1, con capacidad para 15 portátiles",
+        "price": 109.95,
+        "description": "Tu mochila perfecta para el uso diario y los paseos por el bosque. Guarde su computadora portátil (hasta 15 pulgadas) en la funda acolchada, su uso diario",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "rating": {
+          "rate": 3.9,
+          "count": 120
+        },
+        "oferta": {
+          "porcentaje": 10,
+          "precioConDescuento": "98.95"
+        },
+        "cantidad": 6
+      },
+      "1": {
+        "id": 2,
+        "title": "Camisetas ajustadas premium informales para hombre",
+        "price": 22.3,
+        "description": "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable. Y camisas con costuras sólidas y cuello redondo hechas para mayor durabilidad y un excelente ajuste para ropa de moda informal y fanáticos acérrimos del béisbol. El escote redondo estilo Henley incluye una tapeta de tres botones.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        "rating": {
+          "rate": 4.1,
+          "count": 259
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "22.30"
+        },
+        "cantidad": 5
+      },
+      "2": {
+        "id": 3,
+        "title": "Chaqueta de algodón para hombre",
+        "price": 55.99,
+        "description": "Excelentes chaquetas de abrigo para primavera/otoño/invierno, adecuadas para muchas ocasiones, como trabajar, hacer caminatas, acampar, escalar montañas/rocas, andar en bicicleta, viajar u otras actividades al aire libre. Buena opción de regalo para usted o su familiar. Un amor de corazón cálido para el padre, esposo o hijo en este día de acción de gracias o Navidad.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+        "rating": {
+          "rate": 4.7,
+          "count": 500
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "55.99"
+        },
+        "cantidad": 1
+      }
+    }
   }
 ]

@@ -2,7 +2,8 @@ const express = require("express");
 const axios = require("axios");
 const translateProducts = require("../translate");
 const agregarOfertas = require("../agregarOfertas");
-const guardarOfertasPersistentes = require("../crearOfertasPersistentes");
+// const guardarOfertasPersistentes = require("../crearOfertasPersistentes");
+const cargarOfertas = require("../cargarOfertas");
 const fs = require("fs/promises");
 const router = express.Router();
 
@@ -17,10 +18,11 @@ router.get("/products", async (req, res, next) => {
     const data = response.data;
     const dataTranslate = await translateProducts(data); // traduzco api
     const dataTranslateConOfertas = await agregarOfertas(dataTranslate); // le agrego ofertas
-    const ofertasPersistentes = await guardarOfertasPersistentes(dataTranslateConOfertas); // cargo ofertas en varible
+    const dataCompleta = await cargarOfertas(dataTranslateConOfertas);
+    /*const ofertasPersistentes = await guardarOfertasPersistentes(dataTranslateConOfertas); // cargo ofertas en varible
     const ofertasPersistentesJSON = JSON.stringify(ofertasPersistentes, null, 2);
-    await fs.writeFile("src/json/ofertasPersistentes.json", ofertasPersistentesJSON);
-    res.send(dataTranslateConOfertas);
+    await fs.writeFile("src/json/ofertasPersistentes.json", ofertasPersistentesJSON); */
+    res.send(dataCompleta);
     next();
   } catch (error) {
     console.error("Error:", error);
@@ -40,7 +42,6 @@ router.post("/compra", async (req, res) => {
     
     let compraId;
 
-    console.log('el ultimo ID es:' +  Math.max(...ids));
     if (ids === null || ids.length == 0) {
       compraId = 0;
     } else {
