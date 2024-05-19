@@ -133,7 +133,14 @@ const cargarProductosDesdeStorage = () => {
 // llamamos la funcion al cargar la pagina
 document.addEventListener("DOMContentLoaded", cargarProductosDesdeStorage);
 
+// DOM carrito
 const btnEliminarCompra = document.getElementById("btnEliminarCompra");
+const btnCarrito = document.getElementById('btnCarrito');
+const badgeCantidad = document.createElement('span');
+btnCarrito.appendChild(badgeCantidad);
+
+
+// boton eliminar productos del carrito
 btnEliminarCompra.addEventListener("click", () => {
   if (confirm("Desea cancelar la compra?")) {
     localStorage.clear("lista");
@@ -149,15 +156,20 @@ let precioT = document.getElementById("precioTotal");
 // actualizar precio total de la compra
 function actualizarPrecioTotal() {
   let dataP = JSON.parse(localStorage.getItem("lista"));
-  let aux;
+  let aux, aux2;
   if (dataP && dataP.length > 0) {
     aux = dataP.reduce((acc, item) => {
-      return (acc =
-        acc + parseFloat(item.oferta.precioConDescuento * item.cantidad));
+      return (acc + parseFloat(item.oferta.precioConDescuento * item.cantidad));
+    }, 0);
+    aux2 = dataP.reduce((acc, item) => {
+      return (acc + parseFloat(item.cantidad));
     }, 0);
     precioT.textContent = `Total -$ ${parseFloat(aux).toFixed(2)}`;
+    badgeCantidad.className = 'position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger';
+    badgeCantidad.textContent = `${aux2}`;
   } else {
     precioT.textContent = "Total -$ 0.00";
+    badgeCantidad.className = 'visually-hidden';
   }
 }
 setInterval(actualizarPrecioTotal, 1000);

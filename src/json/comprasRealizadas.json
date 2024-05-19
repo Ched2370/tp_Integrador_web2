@@ -749,5 +749,131 @@
         "cantidad": 7
       }
     }
+  },
+  {
+    "id": 15,
+    "fecha": "2024-05-19T01:22:29.961Z",
+    "total": "1687.47",
+    "productos": {
+      "0": {
+        "id": 1,
+        "title": "Fjallraven - Mochila Foldsack No. 1, con capacidad para 15 portátiles",
+        "price": 109.95,
+        "description": "Tu mochila perfecta para el uso diario y los paseos por el bosque. Guarde su computadora portátil (hasta 15 pulgadas) en la funda acolchada, su uso diario",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "rating": {
+          "rate": 3.9,
+          "count": 120
+        },
+        "oferta": {
+          "porcentaje": 10,
+          "precioConDescuento": "98.95"
+        },
+        "cantidad": 1
+      },
+      "1": {
+        "id": 6,
+        "title": "Micropavé pequeño de oro macizo",
+        "price": 168,
+        "description": "Satisfacción garantizada. Devuelva o cambie cualquier pedido dentro de los 30 días. Diseñado y vendido por Hafeez Center en los Estados Unidos. Satisfacción garantizada. Devuelva o cambie cualquier pedido dentro de los 30 días.",
+        "category": "joyería",
+        "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+        "rating": {
+          "rate": 3.9,
+          "count": 70
+        },
+        "oferta": {
+          "porcentaje": 10,
+          "precioConDescuento": "151.20"
+        },
+        "cantidad": 1
+      },
+      "2": {
+        "id": 8,
+        "title": "Búho perforado de acero inoxidable chapado en oro rosa doble",
+        "price": 10.99,
+        "description": "Pendientes tipo túnel acampanados dobles chapados en oro rosa. Hecho de acero inoxidable 316L",
+        "category": "joyería",
+        "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+        "rating": {
+          "rate": 1.9,
+          "count": 100
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "10.99"
+        },
+        "cantidad": 1
+      },
+      "3": {
+        "id": 5,
+        "title": "John Hardy Pulsera de cadena con estación de dragón dorado y plateado Legends Naga para mujer",
+        "price": 695,
+        "description": "De nuestra colección Legends, el Naga se inspiró en el mítico dragón de agua que protege la perla del océano. Úselo mirando hacia adentro para recibir amor y abundancia, o hacia afuera para protección.",
+        "category": "joyería",
+        "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+        "rating": {
+          "rate": 4.6,
+          "count": 400
+        },
+        "oferta": {
+          "porcentaje": 25,
+          "precioConDescuento": "521.25"
+        },
+        "cantidad": 1
+      },
+      "4": {
+        "id": 10,
+        "title": "SanDisk SSD PLUS 1TB SSD interno - SATA III 6 Gb/s",
+        "price": 109,
+        "description": "Actualización sencilla para un inicio, apagado, carga de aplicaciones y respuesta más rápidos (en comparación con el disco duro SATA de 2,5” de 5400 RPM; basado en especificaciones publicadas y pruebas de evaluación comparativas internas utilizando puntajes PCMark vantage) Aumenta el rendimiento de escritura en ráfaga, lo que lo hace ideal para cargas de trabajo típicas de PC El equilibrio perfecto entre rendimiento y confiabilidad Velocidades de lectura/escritura de hasta 535 MB/s/450 MB/s (según pruebas internas; el rendimiento puede variar según la capacidad de la unidad, el dispositivo host, el sistema operativo y la aplicación).",
+        "category": "electrónica",
+        "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+        "rating": {
+          "rate": 2.9,
+          "count": 470
+        },
+        "oferta": {
+          "porcentaje": 10,
+          "precioConDescuento": "98.10"
+        },
+        "cantidad": 1
+      },
+      "5": {
+        "id": 15,
+        "title": "BIYLACLESEN Chaqueta de snowboard 3 en 1 para mujer Abrigos de invierno",
+        "price": 56.99,
+        "description": "Nota: Las chaquetas son de tamaño estándar de EE. UU., elija la talla como su uso habitual. Material: 100% poliéster; Tejido del forro desmontable: forro polar cálido. Forro funcional desmontable: agradable al tacto, ligero y cálido. Chaqueta con forro de cuello alto que te mantiene abrigado en climas fríos. Bolsillos con cremallera: 2 bolsillos para las manos con cremallera, 2 bolsillos con cremallera en el pecho (suficiente para guardar tarjetas o llaves) y 1 bolsillo oculto en el interior. Los bolsillos para las manos con cremallera y el bolsillo oculto mantienen sus cosas seguras. Diseño humanizado: capucha ajustable y desmontable y puño ajustable para evitar el viento y el agua, para un ajuste cómodo. El diseño desmontable 3 en 1 brinda más comodidad, puede separar el abrigo y el interior según sea necesario, o usarlos juntos. Es adecuado para diferentes estaciones y le ayuda a adaptarse a diferentes climas.",
+        "category": "ropa de mujer",
+        "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
+        "rating": {
+          "rate": 2.6,
+          "count": 235
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "56.99"
+        },
+        "cantidad": 1
+      },
+      "6": {
+        "id": 14,
+        "title": "Monitor de juegos curvo Samsung CHG90 de 49 pulgadas y 144 Hz (LC49HG90DMNXZA) – Pantalla súper ultraancha QLED",
+        "price": 999.99,
+        "description": "MONITOR PARA JUEGOS CURVO 32:9 SÚPER ULTRAANCHO DE 49 PULGADAS con pantalla dual de 27 pulgadas una al lado de la otra TECNOLOGÍA QUANTUM DOT (QLED), compatibilidad con HDR y calibración de fábrica que proporciona colores y contraste increíblemente realistas y precisos ALTA FRECUENCIA DE ACTUALIZACIÓN de 144 HZ y tiempo de respuesta ultrarrápido de 1 ms para trabajar elimine el desenfoque de movimiento, las imágenes fantasma y reduzca el retraso de entrada",
+        "category": "electrónica",
+        "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+        "rating": {
+          "rate": 2.2,
+          "count": 140
+        },
+        "oferta": {
+          "porcentaje": 25,
+          "precioConDescuento": "749.99"
+        },
+        "cantidad": 1
+      }
+    }
   }
 ]
