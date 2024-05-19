@@ -9,10 +9,8 @@ async function cargarOfertas(productos) {
 
         productos = productos.map(producto => {
             if (ofertasMap.has(producto.id)) {
-                console.log(`Reemplazando producto ID: ${producto.id} con oferta`);
                 return ofertasMap.get(producto.id);
             } else {
-                console.log(`No hay oferta para el producto ID: ${producto.id}`);
                 return producto;
             }
         });

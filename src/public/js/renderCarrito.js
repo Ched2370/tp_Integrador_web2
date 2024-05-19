@@ -133,4 +133,31 @@ const cargarProductosDesdeStorage = () => {
 // llamamos la funcion al cargar la pagina
 document.addEventListener("DOMContentLoaded", cargarProductosDesdeStorage);
 
+const btnEliminarCompra = document.getElementById("btnEliminarCompra");
+btnEliminarCompra.addEventListener("click", () => {
+  if (confirm("Desea cancelar la compra?")) {
+    localStorage.clear("lista");
+    const elementos = document.querySelectorAll(".producto");
+    elementos.forEach((elem) => {
+      elem.remove();
+    });
+    alert("compra cancelada con exito");
+  }
+});
 
+let precioT = document.getElementById("precioTotal");
+// actualizar precio total de la compra
+function actualizarPrecioTotal() {
+  let dataP = JSON.parse(localStorage.getItem("lista"));
+  let aux;
+  if (dataP && dataP.length > 0) {
+    aux = dataP.reduce((acc, item) => {
+      return (acc =
+        acc + parseFloat(item.oferta.precioConDescuento * item.cantidad));
+    }, 0);
+    precioT.textContent = `Total -$ ${parseFloat(aux).toFixed(2)}`;
+  } else {
+    precioT.textContent = "Total -$ 0.00";
+  }
+}
+setInterval(actualizarPrecioTotal, 1000);
