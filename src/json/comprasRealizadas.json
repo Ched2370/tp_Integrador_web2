@@ -1093,5 +1093,46 @@
         "cantidad": 1
       }
     }
+  },
+  {
+    "idCompra": 18,
+    "fecha": "2024-05-20T01:52:49.620Z",
+    "total": "78.29",
+    "productos": {
+      "0": {
+        "id": 3,
+        "title": "Chaqueta de algodón para hombre",
+        "price": 55.99,
+        "description": "Excelentes chaquetas de abrigo para primavera/otoño/invierno, adecuadas para muchas ocasiones, como trabajar, hacer caminatas, acampar, escalar montañas/rocas, andar en bicicleta, viajar u otras actividades al aire libre. Buena opción de regalo para usted o su familiar. Un amor de corazón cálido para el padre, esposo o hijo en este día de acción de gracias o Navidad.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+        "rating": {
+          "rate": 4.7,
+          "count": 500
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "55.99"
+        },
+        "cantidad": 1
+      },
+      "1": {
+        "id": 2,
+        "title": "Camisetas ajustadas premium informales para hombre",
+        "price": 22.3,
+        "description": "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable. Y camisas con costuras sólidas y cuello redondo hechas para mayor durabilidad y un excelente ajuste para ropa de moda informal y fanáticos acérrimos del béisbol. El escote redondo estilo Henley incluye una tapeta de tres botones.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        "rating": {
+          "rate": 4.1,
+          "count": 259
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "22.30"
+        },
+        "cantidad": 1
+      }
+    }
   }
 ]
