@@ -1,1 +1,22 @@
 // cargar tabla con las compras desde la bd
+.modal.fade(id="compras", tabindex="-1", aria-labelledby="exampleModalLabel", aria-hidden="true").modal-xl
+  .modal-dialog
+    .modal-content
+      .modal-header
+        h1.modal-title.fs-5#exampleModalLabel Compras realizadas
+        button.btn-close(type="button", data-bs-dismiss="modal", aria-label="Close")
+      .modal-body.table-responsive
+        table.table.table-dark.table-hover
+          thead
+            tr
+              th(scope="col") #Ticket
+              th(scope="col") Productos
+              th(scope="col") Cantidad
+              th(scope="col") Precio Total
+              th(scope="col") Fecha
+          tbody#agregarCompras
+      .modal-footer
+        button.btn.btn-secondary(type="button", data-bs-dismiss="modal") Cerrar
+
+
+    

@@ -3,9 +3,10 @@
     h5.offcanvas-title#offcanvasRightLabel Carrito
     button.btn-close(type="button", data-bs-dismiss="offcanvas", aria-label="Close")
   .offcanvas-body.text-center#carrito
-    .w100.d-flex.justify-content-evenly
-      input.btn.btn-primary(type="button" value="Comprar")#btnComprar
-      p.my-auto#precioTotal $ 0.00
-      button.btn.btn-light#btnEliminarCompra
-        i.bi.bi-trash.text-danger.my-auto
+    .w100.d-flex.justify-content-evenly.text-bg-dark.p-2.rounded
+      button.btn.btn-primary#btnComprar
+        i.bi.bi-bag-heart-fill
+      p.my-auto#precioTotal.px-3 $ 0.00
+      button.btn.btn-light#btnEliminarCompra.bg-danger
+        i.bi.bi-trash.text-bg-danger.my-auto
 

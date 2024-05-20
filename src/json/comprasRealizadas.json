@@ -1,8 +1,8 @@
 [
   {
-    "id": 0,
-    "fecha": "2024-05-17T14:52:32.149Z",
-    "total": "319.15",
+    "idCompra": 0,
+    "fecha": "2024-05-19T04:31:05.572Z",
+    "total": "121.25",
     "productos": {
       "0": {
         "id": 1,
@@ -19,7 +19,7 @@
           "porcentaje": 10,
           "precioConDescuento": "98.95"
         },
-        "cantidad": 3
+        "cantidad": 1
       },
       "1": {
         "id": 2,
@@ -41,9 +41,74 @@
     }
   },
   {
-    "id": 1,
-    "fecha": "2024-05-17T17:07:35.063Z",
-    "total": "220.20",
+    "idCompra": 1,
+    "fecha": "2024-05-19T04:31:36.519Z",
+    "total": "22.30",
+    "productos": {
+      "0": {
+        "id": 2,
+        "title": "Camisetas ajustadas premium informales para hombre",
+        "price": 22.3,
+        "description": "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable. Y camisas con costuras sólidas y cuello redondo hechas para mayor durabilidad y un excelente ajuste para ropa de moda informal y fanáticos acérrimos del béisbol. El escote redondo estilo Henley incluye una tapeta de tres botones.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        "rating": {
+          "rate": 4.1,
+          "count": 259
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "22.30"
+        },
+        "cantidad": 1
+      }
+    }
+  },
+  {
+    "idCompra": 2,
+    "fecha": "2024-05-19T04:31:48.409Z",
+    "total": "78.29",
+    "productos": {
+      "0": {
+        "id": 3,
+        "title": "Chaqueta de algodón para hombre",
+        "price": 55.99,
+        "description": "Excelentes chaquetas de abrigo para primavera/otoño/invierno, adecuadas para muchas ocasiones, como trabajar, hacer caminatas, acampar, escalar montañas/rocas, andar en bicicleta, viajar u otras actividades al aire libre. Buena opción de regalo para usted o su familiar. Un amor de corazón cálido para el padre, esposo o hijo en este día de acción de gracias o Navidad.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+        "rating": {
+          "rate": 4.7,
+          "count": 500
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "55.99"
+        },
+        "cantidad": 1
+      },
+      "1": {
+        "id": 2,
+        "title": "Camisetas ajustadas premium informales para hombre",
+        "price": 22.3,
+        "description": "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable. Y camisas con costuras sólidas y cuello redondo hechas para mayor durabilidad y un excelente ajuste para ropa de moda informal y fanáticos acérrimos del béisbol. El escote redondo estilo Henley incluye una tapeta de tres botones.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        "rating": {
+          "rate": 4.1,
+          "count": 259
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "22.30"
+        },
+        "cantidad": 1
+      }
+    }
+  },
+  {
+    "idCompra": 3,
+    "fecha": "2024-05-19T07:23:47.694Z",
+    "total": "814.63",
     "productos": {
       "0": {
         "id": 1,
@@ -77,14 +142,208 @@
           "porcentaje": 0,
           "precioConDescuento": "22.30"
         },
-        "cantidad": 1
+        "cantidad": 4
+      },
+      "2": {
+        "id": 6,
+        "title": "Micropavé pequeño de oro macizo",
+        "price": 168,
+        "description": "Satisfacción garantizada. Devuelva o cambie cualquier pedido dentro de los 30 días. Diseñado y vendido por Hafeez Center en los Estados Unidos. Satisfacción garantizada. Devuelva o cambie cualquier pedido dentro de los 30 días.",
+        "category": "joyería",
+        "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+        "rating": {
+          "rate": 3.9,
+          "count": 70
+        },
+        "oferta": {
+          "porcentaje": 10,
+          "precioConDescuento": "151.20"
+        },
+        "cantidad": 3
+      },
+      "3": {
+        "id": 7,
+        "title": "Princesa chapada en oro blanco",
+        "price": 9.99,
+        "description": "Anillo de promesa de diamante solitario de compromiso de boda creado clásico para ella. Regalos para mimar más tu amor para Compromiso, Boda, Aniversario, San Valentín...",
+        "category": "joyería",
+        "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
+        "rating": {
+          "rate": 3,
+          "count": 400
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "9.99"
+        },
+        "cantidad": 3
+      },
+      "4": {
+        "id": 8,
+        "title": "Búho perforado de acero inoxidable chapado en oro rosa doble",
+        "price": 10.99,
+        "description": "Pendientes tipo túnel acampanados dobles chapados en oro rosa. Hecho de acero inoxidable 316L",
+        "category": "joyería",
+        "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+        "rating": {
+          "rate": 1.9,
+          "count": 100
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "10.99"
+        },
+        "cantidad": 4
       }
     }
   },
   {
-    "id": 2,
-    "fecha": "2024-05-17T17:10:32.149Z",
-    "total": "397.44",
+    "idCompra": 4,
+    "fecha": "2024-05-19T07:27:31.089Z",
+    "total": "3240.95",
+    "productos": {
+      "0": {
+        "id": 10,
+        "title": "SanDisk SSD PLUS 1TB SSD interno - SATA III 6 Gb/s",
+        "price": 109,
+        "description": "Actualización sencilla para un inicio, apagado, carga de aplicaciones y respuesta más rápidos (en comparación con el disco duro SATA de 2,5” de 5400 RPM; basado en especificaciones publicadas y pruebas de evaluación comparativas internas utilizando puntajes PCMark vantage) Aumenta el rendimiento de escritura en ráfaga, lo que lo hace ideal para cargas de trabajo típicas de PC El equilibrio perfecto entre rendimiento y confiabilidad Velocidades de lectura/escritura de hasta 535 MB/s/450 MB/s (según pruebas internas; el rendimiento puede variar según la capacidad de la unidad, el dispositivo host, el sistema operativo y la aplicación).",
+        "category": "electrónica",
+        "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+        "rating": {
+          "rate": 2.9,
+          "count": 470
+        },
+        "oferta": {
+          "porcentaje": 10,
+          "precioConDescuento": "98.10"
+        },
+        "cantidad": 3
+      },
+      "1": {
+        "id": 11,
+        "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Caché Rendimiento Aumentar SATA III 2.5",
+        "price": 109,
+        "description": "Se aplica flash 3D NAND para ofrecer altas velocidades de transferencia. Velocidades de transferencia notables que permiten un arranque más rápido y un rendimiento general mejorado del sistema. La avanzada tecnología SLC Cache permite aumentar el rendimiento y prolongar la vida útil. Diseño delgado de 7 mm adecuado para Ultrabooks y portátiles ultradelgados. Admite el comando TRIM, la tecnología de recolección de basura, RAID y ECC (comprobación y corrección de errores) para proporcionar un rendimiento optimizado y una confiabilidad mejorada.",
+        "category": "electrónica",
+        "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
+        "rating": {
+          "rate": 4.8,
+          "count": 319
+        },
+        "oferta": {
+          "porcentaje": 10,
+          "precioConDescuento": "98.10"
+        },
+        "cantidad": 4
+      },
+      "2": {
+        "id": 14,
+        "title": "Monitor de juegos curvo Samsung CHG90 de 49 pulgadas y 144 Hz (LC49HG90DMNXZA) – Pantalla súper ultraancha QLED",
+        "price": 999.99,
+        "description": "MONITOR PARA JUEGOS CURVO 32:9 SÚPER ULTRAANCHO DE 49 PULGADAS con pantalla dual de 27 pulgadas una al lado de la otra TECNOLOGÍA QUANTUM DOT (QLED), compatibilidad con HDR y calibración de fábrica que proporciona colores y contraste increíblemente realistas y precisos ALTA FRECUENCIA DE ACTUALIZACIÓN de 144 HZ y tiempo de respuesta ultrarrápido de 1 ms para trabajar elimine el desenfoque de movimiento, las imágenes fantasma y reduzca el retraso de entrada",
+        "category": "electrónica",
+        "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+        "rating": {
+          "rate": 2.2,
+          "count": 140
+        },
+        "oferta": {
+          "porcentaje": 25,
+          "precioConDescuento": "749.99"
+        },
+        "cantidad": 3
+      },
+      "3": {
+        "id": 18,
+        "title": "MBJ Camiseta de manga corta con cuello barco en V para mujer",
+        "price": 9.85,
+        "description": "95% RAYÓN 5% SPANDEX, Hecho en EE. UU. o importado, No usar lejía, Tejido liviano con gran elasticidad para mayor comodidad, Acanalado en mangas y escote / Doble costura en el dobladillo inferior",
+        "category": "ropa de mujer",
+        "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
+        "rating": {
+          "rate": 4.7,
+          "count": 130
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "9.85"
+        },
+        "cantidad": 3
+      },
+      "4": {
+        "id": 19,
+        "title": "Opna Humedad de manga corta para mujer",
+        "price": 7.95,
+        "description": "100 % poliéster, lavado a máquina, tejido entrelazado 100 % poliéster catiónico, lavado a máquina y preencogido para un excelente ajuste, liviano, espacioso y altamente transpirable con tejido que absorbe la humedad y ayuda a mantenerla alejada, tejido suave y liviano con cómodo cuello en V y un ajuste más delgado, ofrece una silueta elegante y más femenina y mayor comodidad",
+        "category": "ropa de mujer",
+        "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
+        "rating": {
+          "rate": 4.5,
+          "count": 146
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "7.95"
+        },
+        "cantidad": 2
+      },
+      "5": {
+        "id": 20,
+        "title": "DANVOUY Camiseta corta de algodón informal para mujer",
+        "price": 12.99,
+        "description": "95% algodón, 5% spandex, Características: informal, manga corta, estampado de letras, cuello en V, camisetas de moda, la tela es suave y algo elástica. Ocasión: informal/oficina/playa/escuela/hogar/calle. Temporada: Primavera,Verano,Otoño,Invierno.",
+        "category": "ropa de mujer",
+        "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
+        "rating": {
+          "rate": 3.6,
+          "count": 145
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "12.99"
+        },
+        "cantidad": 3
+      },
+      "6": {
+        "id": 17,
+        "title": "Chaqueta impermeable para mujer, cortavientos, impermeables de escalada a rayas",
+        "price": 39.99,
+        "description": "Ligero, perfecto para viajes o uso informal. Manga larga con capucha, diseño de cintura con cordón ajustable. Chubasquero con cierre frontal con botón y cremallera, totalmente forrado a rayas. El chubasquero tiene 2 bolsillos laterales y es de buen tamaño para guardar todo tipo de cosas, cubre las caderas y la capucha es generosa pero no exagerada. Capucha forrada de algodón adjunta con Los cordones ajustables le dan un aspecto de estilo real.",
+        "category": "ropa de mujer",
+        "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
+        "rating": {
+          "rate": 3.8,
+          "count": 679
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "39.99"
+        },
+        "cantidad": 4
+      },
+      "7": {
+        "id": 16,
+        "title": "Lock and Love Chaqueta motociclista de piel sintética con capucha extraíble para mujer",
+        "price": 29.95,
+        "description": "100 % POLIURETANO (cubierta) 100 % POLIÉSTER (forro) 75 % POLIÉSTER 25 % ALGODÓN (SUÉTER), Material de piel sintética para estilo y comodidad/2 bolsillos delanteros, chaqueta de piel sintética estilo mezclilla con capucha 2 por uno, detalle de botones cintura / Detalle de costuras en los costados, LAVAR SOLAMENTE A MANO / NO USAR LEJÍA / SECAR AL tendedero / NO PLANCHAR",
+        "category": "ropa de mujer",
+        "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+        "rating": {
+          "rate": 2.9,
+          "count": 340
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "29.95"
+        },
+        "cantidad": 2
+      }
+    }
+  },
+  {
+    "idCompra": 5,
+    "fecha": "2024-05-19T07:43:22.196Z",
+    "total": "121.25",
     "productos": {
       "0": {
         "id": 1,
@@ -101,7 +360,7 @@
           "porcentaje": 10,
           "precioConDescuento": "98.95"
         },
-        "cantidad": 3
+        "cantidad": 1
       },
       "1": {
         "id": 2,
@@ -118,7 +377,72 @@
           "porcentaje": 0,
           "precioConDescuento": "22.30"
         },
-        "cantidad": 2
+        "cantidad": 1
+      }
+    }
+  },
+  {
+    "idCompra": 6,
+    "fecha": "2024-05-19T07:44:29.467Z",
+    "total": "22.30",
+    "productos": {
+      "0": {
+        "id": 2,
+        "title": "Camisetas ajustadas premium informales para hombre",
+        "price": 22.3,
+        "description": "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable. Y camisas con costuras sólidas y cuello redondo hechas para mayor durabilidad y un excelente ajuste para ropa de moda informal y fanáticos acérrimos del béisbol. El escote redondo estilo Henley incluye una tapeta de tres botones.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        "rating": {
+          "rate": 4.1,
+          "count": 259
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "22.30"
+        },
+        "cantidad": 1
+      }
+    }
+  },
+  {
+    "idCompra": 7,
+    "fecha": "2024-05-19T08:10:27.398Z",
+    "total": "859.68",
+    "productos": {
+      "0": {
+        "id": 1,
+        "title": "Fjallraven - Mochila Foldsack No. 1, con capacidad para 15 portátiles",
+        "price": 109.95,
+        "description": "Tu mochila perfecta para el uso diario y los paseos por el bosque. Guarde su computadora portátil (hasta 15 pulgadas) en la funda acolchada, su uso diario",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "rating": {
+          "rate": 3.9,
+          "count": 120
+        },
+        "oferta": {
+          "porcentaje": 10,
+          "precioConDescuento": "98.95"
+        },
+        "cantidad": 1
+      },
+      "1": {
+        "id": 2,
+        "title": "Camisetas ajustadas premium informales para hombre",
+        "price": 22.3,
+        "description": "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable. Y camisas con costuras sólidas y cuello redondo hechas para mayor durabilidad y un excelente ajuste para ropa de moda informal y fanáticos acérrimos del béisbol. El escote redondo estilo Henley incluye una tapeta de tres botones.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        "rating": {
+          "rate": 4.1,
+          "count": 259
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "22.30"
+        },
+        "cantidad": 1
       },
       "2": {
         "id": 3,
@@ -136,54 +460,64 @@
           "precioConDescuento": "55.99"
         },
         "cantidad": 1
-      }
-    }
-  },
-  {
-    "id": 3,
-    "fecha": "2024-05-17T17:16:33.962Z",
-    "total": "167.49",
-    "productos": {
-      "0": {
-        "id": 2,
-        "title": "Camisetas ajustadas premium informales para hombre",
-        "price": 22.3,
-        "description": "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable. Y camisas con costuras sólidas y cuello redondo hechas para mayor durabilidad y un excelente ajuste para ropa de moda informal y fanáticos acérrimos del béisbol. El escote redondo estilo Henley incluye una tapeta de tres botones.",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-        "rating": {
-          "rate": 4.1,
-          "count": 259
-        },
-        "oferta": {
-          "porcentaje": 0,
-          "precioConDescuento": "22.30"
-        },
-        "cantidad": 5
       },
-      "1": {
-        "id": 3,
-        "title": "Chaqueta de algodón para hombre",
-        "price": 55.99,
-        "description": "Excelentes chaquetas de abrigo para primavera/otoño/invierno, adecuadas para muchas ocasiones, como trabajar, hacer caminatas, acampar, escalar montañas/rocas, andar en bicicleta, viajar u otras actividades al aire libre. Buena opción de regalo para usted o su familiar. Un amor de corazón cálido para el padre, esposo o hijo en este día de acción de gracias o Navidad.",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+      "3": {
+        "id": 7,
+        "title": "Princesa chapada en oro blanco",
+        "price": 9.99,
+        "description": "Anillo de promesa de diamante solitario de compromiso de boda creado clásico para ella. Regalos para mimar más tu amor para Compromiso, Boda, Aniversario, San Valentín...",
+        "category": "joyería",
+        "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
         "rating": {
-          "rate": 4.7,
-          "count": 500
+          "rate": 3,
+          "count": 400
         },
         "oferta": {
           "porcentaje": 0,
-          "precioConDescuento": "55.99"
+          "precioConDescuento": "9.99"
+        },
+        "cantidad": 1
+      },
+      "4": {
+        "id": 6,
+        "title": "Micropavé pequeño de oro macizo",
+        "price": 168,
+        "description": "Satisfacción garantizada. Devuelva o cambie cualquier pedido dentro de los 30 días. Diseñado y vendido por Hafeez Center en los Estados Unidos. Satisfacción garantizada. Devuelva o cambie cualquier pedido dentro de los 30 días.",
+        "category": "joyería",
+        "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+        "rating": {
+          "rate": 3.9,
+          "count": 70
+        },
+        "oferta": {
+          "porcentaje": 10,
+          "precioConDescuento": "151.20"
+        },
+        "cantidad": 1
+      },
+      "5": {
+        "id": 5,
+        "title": "John Hardy Pulsera de cadena con estación de dragón dorado y plateado Legends Naga para mujer",
+        "price": 695,
+        "description": "De nuestra colección Legends, el Naga se inspiró en el mítico dragón de agua que protege la perla del océano. Úselo mirando hacia adentro para recibir amor y abundancia, o hacia afuera para protección.",
+        "category": "joyería",
+        "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+        "rating": {
+          "rate": 4.6,
+          "count": 400
+        },
+        "oferta": {
+          "porcentaje": 25,
+          "precioConDescuento": "521.25"
         },
         "cantidad": 1
       }
     }
   },
   {
-    "id": 4,
-    "fecha": "2024-05-17T17:19:52.038Z",
-    "total": "397.44",
+    "idCompra": 8,
+    "fecha": "2024-05-19T08:48:07.744Z",
+    "total": "796.59",
     "productos": {
       "0": {
         "id": 1,
@@ -200,7 +534,7 @@
           "porcentaje": 10,
           "precioConDescuento": "98.95"
         },
-        "cantidad": 3
+        "cantidad": 1
       },
       "1": {
         "id": 2,
@@ -217,7 +551,7 @@
           "porcentaje": 0,
           "precioConDescuento": "22.30"
         },
-        "cantidad": 2
+        "cantidad": 1
       },
       "2": {
         "id": 3,
@@ -235,13 +569,71 @@
           "precioConDescuento": "55.99"
         },
         "cantidad": 1
+      },
+      "3": {
+        "id": 10,
+        "title": "SanDisk SSD PLUS 1TB SSD interno - SATA III 6 Gb/s",
+        "price": 109,
+        "description": "Actualización sencilla para un inicio, apagado, carga de aplicaciones y respuesta más rápidos (en comparación con el disco duro SATA de 2,5” de 5400 RPM; basado en especificaciones publicadas y pruebas de evaluación comparativas internas utilizando puntajes PCMark vantage) Aumenta el rendimiento de escritura en ráfaga, lo que lo hace ideal para cargas de trabajo típicas de PC El equilibrio perfecto entre rendimiento y confiabilidad Velocidades de lectura/escritura de hasta 535 MB/s/450 MB/s (según pruebas internas; el rendimiento puede variar según la capacidad de la unidad, el dispositivo host, el sistema operativo y la aplicación).",
+        "category": "electrónica",
+        "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+        "rating": {
+          "rate": 2.9,
+          "count": 470
+        },
+        "oferta": {
+          "porcentaje": 10,
+          "precioConDescuento": "98.10"
+        },
+        "cantidad": 1
+      },
+      "4": {
+        "id": 5,
+        "title": "John Hardy Pulsera de cadena con estación de dragón dorado y plateado Legends Naga para mujer",
+        "price": 695,
+        "description": "De nuestra colección Legends, el Naga se inspiró en el mítico dragón de agua que protege la perla del océano. Úselo mirando hacia adentro para recibir amor y abundancia, o hacia afuera para protección.",
+        "category": "joyería",
+        "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+        "rating": {
+          "rate": 4.6,
+          "count": 400
+        },
+        "oferta": {
+          "porcentaje": 25,
+          "precioConDescuento": "521.25"
+        },
+        "cantidad": 1
       }
     }
   },
   {
-    "id": 5,
-    "fecha": "2024-05-17T17:23:32.719Z",
-    "total": "319.15",
+    "idCompra": 9,
+    "fecha": "2024-05-19T20:51:33.447Z",
+    "total": "391.93",
+    "productos": {
+      "0": {
+        "id": 3,
+        "title": "Chaqueta de algodón para hombre",
+        "price": 55.99,
+        "description": "Excelentes chaquetas de abrigo para primavera/otoño/invierno, adecuadas para muchas ocasiones, como trabajar, hacer caminatas, acampar, escalar montañas/rocas, andar en bicicleta, viajar u otras actividades al aire libre. Buena opción de regalo para usted o su familiar. Un amor de corazón cálido para el padre, esposo o hijo en este día de acción de gracias o Navidad.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+        "rating": {
+          "rate": 4.7,
+          "count": 500
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "55.99"
+        },
+        "cantidad": 7
+      }
+    }
+  },
+  {
+    "idCompra": 10,
+    "fecha": "2024-05-19T20:52:15.397Z",
+    "total": "193.23",
     "productos": {
       "0": {
         "id": 1,
@@ -258,7 +650,7 @@
           "porcentaje": 10,
           "precioConDescuento": "98.95"
         },
-        "cantidad": 3
+        "cantidad": 1
       },
       "1": {
         "id": 2,
@@ -276,12 +668,121 @@
           "precioConDescuento": "22.30"
         },
         "cantidad": 1
+      },
+      "2": {
+        "id": 3,
+        "title": "Chaqueta de algodón para hombre",
+        "price": 55.99,
+        "description": "Excelentes chaquetas de abrigo para primavera/otoño/invierno, adecuadas para muchas ocasiones, como trabajar, hacer caminatas, acampar, escalar montañas/rocas, andar en bicicleta, viajar u otras actividades al aire libre. Buena opción de regalo para usted o su familiar. Un amor de corazón cálido para el padre, esposo o hijo en este día de acción de gracias o Navidad.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+        "rating": {
+          "rate": 4.7,
+          "count": 500
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "55.99"
+        },
+        "cantidad": 1
+      },
+      "3": {
+        "id": 4,
+        "title": "Corte ajustado informal para hombre",
+        "price": 15.99,
+        "description": "El color puede ser ligeramente diferente en la pantalla y en la práctica. / Tenga en cuenta que la constitución corporal varía según la persona, por lo tanto, la información detallada sobre el tamaño debe revisarse a continuación en la descripción del producto.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+        "rating": {
+          "rate": 2.1,
+          "count": 430
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "15.99"
+        },
+        "cantidad": 1
       }
     }
   },
   {
-    "id": 6,
-    "fecha": "2024-05-17T17:39:45.990Z",
+    "idCompra": 11,
+    "fecha": "2024-05-19T20:54:46.992Z",
+    "total": "193.23",
+    "productos": {
+      "0": {
+        "id": 1,
+        "title": "Fjallraven - Mochila Foldsack No. 1, con capacidad para 15 portátiles",
+        "price": 109.95,
+        "description": "Tu mochila perfecta para el uso diario y los paseos por el bosque. Guarde su computadora portátil (hasta 15 pulgadas) en la funda acolchada, su uso diario",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "rating": {
+          "rate": 3.9,
+          "count": 120
+        },
+        "oferta": {
+          "porcentaje": 10,
+          "precioConDescuento": "98.95"
+        },
+        "cantidad": 1
+      },
+      "1": {
+        "id": 2,
+        "title": "Camisetas ajustadas premium informales para hombre",
+        "price": 22.3,
+        "description": "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable. Y camisas con costuras sólidas y cuello redondo hechas para mayor durabilidad y un excelente ajuste para ropa de moda informal y fanáticos acérrimos del béisbol. El escote redondo estilo Henley incluye una tapeta de tres botones.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        "rating": {
+          "rate": 4.1,
+          "count": 259
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "22.30"
+        },
+        "cantidad": 1
+      },
+      "2": {
+        "id": 3,
+        "title": "Chaqueta de algodón para hombre",
+        "price": 55.99,
+        "description": "Excelentes chaquetas de abrigo para primavera/otoño/invierno, adecuadas para muchas ocasiones, como trabajar, hacer caminatas, acampar, escalar montañas/rocas, andar en bicicleta, viajar u otras actividades al aire libre. Buena opción de regalo para usted o su familiar. Un amor de corazón cálido para el padre, esposo o hijo en este día de acción de gracias o Navidad.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+        "rating": {
+          "rate": 4.7,
+          "count": 500
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "55.99"
+        },
+        "cantidad": 1
+      },
+      "3": {
+        "id": 4,
+        "title": "Corte ajustado informal para hombre",
+        "price": 15.99,
+        "description": "El color puede ser ligeramente diferente en la pantalla y en la práctica. / Tenga en cuenta que la constitución corporal varía según la persona, por lo tanto, la información detallada sobre el tamaño debe revisarse a continuación en la descripción del producto.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+        "rating": {
+          "rate": 2.1,
+          "count": 430
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "15.99"
+        },
+        "cantidad": 1
+      }
+    }
+  },
+  {
+    "idCompra": 12,
+    "fecha": "2024-05-19T20:58:00.752Z",
     "total": "177.24",
     "productos": {
       "0": {
@@ -338,9 +839,9 @@
     }
   },
   {
-    "id": 7,
-    "fecha": "2024-05-17T17:40:51.851Z",
-    "total": "386.05",
+    "idCompra": 13,
+    "fecha": "2024-05-19T20:58:09.096Z",
+    "total": "177.24",
     "productos": {
       "0": {
         "id": 1,
@@ -356,440 +857,102 @@
         "oferta": {
           "porcentaje": 10,
           "precioConDescuento": "98.95"
+        },
+        "cantidad": 1
+      },
+      "1": {
+        "id": 2,
+        "title": "Camisetas ajustadas premium informales para hombre",
+        "price": 22.3,
+        "description": "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable. Y camisas con costuras sólidas y cuello redondo hechas para mayor durabilidad y un excelente ajuste para ropa de moda informal y fanáticos acérrimos del béisbol. El escote redondo estilo Henley incluye una tapeta de tres botones.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        "rating": {
+          "rate": 4.1,
+          "count": 259
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "22.30"
+        },
+        "cantidad": 1
+      },
+      "2": {
+        "id": 3,
+        "title": "Chaqueta de algodón para hombre",
+        "price": 55.99,
+        "description": "Excelentes chaquetas de abrigo para primavera/otoño/invierno, adecuadas para muchas ocasiones, como trabajar, hacer caminatas, acampar, escalar montañas/rocas, andar en bicicleta, viajar u otras actividades al aire libre. Buena opción de regalo para usted o su familiar. Un amor de corazón cálido para el padre, esposo o hijo en este día de acción de gracias o Navidad.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+        "rating": {
+          "rate": 4.7,
+          "count": 500
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "55.99"
+        },
+        "cantidad": 1
+      }
+    }
+  },
+  {
+    "idCompra": 14,
+    "fecha": "2024-05-19T21:09:50.138Z",
+    "total": "646.63",
+    "productos": {
+      "0": {
+        "id": 1,
+        "title": "Fjallraven - Mochila Foldsack No. 1, con capacidad para 15 portátiles",
+        "price": 109.95,
+        "description": "Tu mochila perfecta para el uso diario y los paseos por el bosque. Guarde su computadora portátil (hasta 15 pulgadas) en la funda acolchada, su uso diario",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "rating": {
+          "rate": 3.9,
+          "count": 120
+        },
+        "oferta": {
+          "porcentaje": 10,
+          "precioConDescuento": "98.95"
+        },
+        "cantidad": 5
+      },
+      "1": {
+        "id": 2,
+        "title": "Camisetas ajustadas premium informales para hombre",
+        "price": 22.3,
+        "description": "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable. Y camisas con costuras sólidas y cuello redondo hechas para mayor durabilidad y un excelente ajuste para ropa de moda informal y fanáticos acérrimos del béisbol. El escote redondo estilo Henley incluye una tapeta de tres botones.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        "rating": {
+          "rate": 4.1,
+          "count": 259
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "22.30"
         },
         "cantidad": 3
       },
-      "1": {
-        "id": 2,
-        "title": "Camisetas ajustadas premium informales para hombre",
-        "price": 22.3,
-        "description": "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable. Y camisas con costuras sólidas y cuello redondo hechas para mayor durabilidad y un excelente ajuste para ropa de moda informal y fanáticos acérrimos del béisbol. El escote redondo estilo Henley incluye una tapeta de tres botones.",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-        "rating": {
-          "rate": 4.1,
-          "count": 259
-        },
-        "oferta": {
-          "porcentaje": 0,
-          "precioConDescuento": "22.30"
-        },
-        "cantidad": 4
-      }
-    }
-  },
-  {
-    "id": 8,
-    "fecha": "2024-05-17T17:47:25.390Z",
-    "total": "916.13",
-    "productos": {
-      "0": {
-        "id": 1,
-        "title": "Fjallraven - Mochila Foldsack No. 1, con capacidad para 15 portátiles",
-        "price": 109.95,
-        "description": "Tu mochila perfecta para el uso diario y los paseos por el bosque. Guarde su computadora portátil (hasta 15 pulgadas) en la funda acolchada, su uso diario",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-        "rating": {
-          "rate": 3.9,
-          "count": 120
-        },
-        "oferta": {
-          "porcentaje": 10,
-          "precioConDescuento": "98.95"
-        },
-        "cantidad": 7
-      },
-      "1": {
-        "id": 2,
-        "title": "Camisetas ajustadas premium informales para hombre",
-        "price": 22.3,
-        "description": "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable. Y camisas con costuras sólidas y cuello redondo hechas para mayor durabilidad y un excelente ajuste para ropa de moda informal y fanáticos acérrimos del béisbol. El escote redondo estilo Henley incluye una tapeta de tres botones.",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-        "rating": {
-          "rate": 4.1,
-          "count": 259
-        },
-        "oferta": {
-          "porcentaje": 0,
-          "precioConDescuento": "22.30"
-        },
-        "cantidad": 5
-      },
       "2": {
-        "id": 3,
-        "title": "Chaqueta de algodón para hombre",
-        "price": 55.99,
-        "description": "Excelentes chaquetas de abrigo para primavera/otoño/invierno, adecuadas para muchas ocasiones, como trabajar, hacer caminatas, acampar, escalar montañas/rocas, andar en bicicleta, viajar u otras actividades al aire libre. Buena opción de regalo para usted o su familiar. Un amor de corazón cálido para el padre, esposo o hijo en este día de acción de gracias o Navidad.",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+        "id": 9,
+        "title": "Disco duro externo portátil WD Elements de 2 TB - USB 3.0",
+        "price": 64,
+        "description": "Compatibilidad con USB 3.0 y USB 2.0 Transferencias de datos rápidas Mejora el rendimiento de la PC Alta capacidad; Compatibilidad NTFS formateado para Windows 10, Windows 8.1, Windows 7; Es posible que sea necesario volver a formatear para otros sistemas operativos; La compatibilidad puede variar según la configuración del hardware y el sistema operativo del usuario.",
+        "category": "electrónica",
+        "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
         "rating": {
-          "rate": 4.7,
-          "count": 500
+          "rate": 3.3,
+          "count": 203
         },
         "oferta": {
           "porcentaje": 0,
-          "precioConDescuento": "55.99"
-        },
-        "cantidad": 2
-      }
-    }
-  },
-  {
-    "id": 9,
-    "fecha": "2024-05-17T20:03:04.160Z",
-    "total": "188.24",
-    "productos": {
-      "0": {
-        "id": 1,
-        "title": "Fjallraven - Mochila Foldsack No. 1, con capacidad para 15 portátiles",
-        "price": 109.95,
-        "description": "Tu mochila perfecta para el uso diario y los paseos por el bosque. Guarde su computadora portátil (hasta 15 pulgadas) en la funda acolchada, su uso diario",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-        "rating": {
-          "rate": 3.9,
-          "count": 120
-        },
-        "oferta": {
-          "porcentaje": 0,
-          "precioConDescuento": "109.95"
+          "precioConDescuento": "64.00"
         },
         "cantidad": 1
-      },
-      "1": {
-        "id": 2,
-        "title": "Camisetas ajustadas premium informales para hombre",
-        "price": 22.3,
-        "description": "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable. Y camisas con costuras sólidas y cuello redondo hechas para mayor durabilidad y un excelente ajuste para ropa de moda informal y fanáticos acérrimos del béisbol. El escote redondo estilo Henley incluye una tapeta de tres botones.",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-        "rating": {
-          "rate": 4.1,
-          "count": 259
-        },
-        "oferta": {
-          "porcentaje": 0,
-          "precioConDescuento": "22.30"
-        },
-        "cantidad": 1
-      },
-      "2": {
-        "id": 3,
-        "title": "Chaqueta de algodón para hombre",
-        "price": 55.99,
-        "description": "Excelentes chaquetas de abrigo para primavera/otoño/invierno, adecuadas para muchas ocasiones, como trabajar, hacer caminatas, acampar, escalar montañas/rocas, andar en bicicleta, viajar u otras actividades al aire libre. Buena opción de regalo para usted o su familiar. Un amor de corazón cálido para el padre, esposo o hijo en este día de acción de gracias o Navidad.",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-        "rating": {
-          "rate": 4.7,
-          "count": 500
-        },
-        "oferta": {
-          "porcentaje": 0,
-          "precioConDescuento": "55.99"
-        },
-        "cantidad": 1
-      }
-    }
-  },
-  {
-    "id": 10,
-    "fecha": "2024-05-17T20:22:37.553Z",
-    "total": "761.19",
-    "productos": {
-      "0": {
-        "id": 1,
-        "title": "Fjallraven - Mochila Foldsack No. 1, con capacidad para 15 portátiles",
-        "price": 109.95,
-        "description": "Tu mochila perfecta para el uso diario y los paseos por el bosque. Guarde su computadora portátil (hasta 15 pulgadas) en la funda acolchada, su uso diario",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-        "rating": {
-          "rate": 3.9,
-          "count": 120
-        },
-        "oferta": {
-          "porcentaje": 10,
-          "precioConDescuento": "98.95"
-        },
-        "cantidad": 6
-      },
-      "1": {
-        "id": 2,
-        "title": "Camisetas ajustadas premium informales para hombre",
-        "price": 22.3,
-        "description": "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable. Y camisas con costuras sólidas y cuello redondo hechas para mayor durabilidad y un excelente ajuste para ropa de moda informal y fanáticos acérrimos del béisbol. El escote redondo estilo Henley incluye una tapeta de tres botones.",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-        "rating": {
-          "rate": 4.1,
-          "count": 259
-        },
-        "oferta": {
-          "porcentaje": 0,
-          "precioConDescuento": "22.30"
-        },
-        "cantidad": 5
-      },
-      "2": {
-        "id": 3,
-        "title": "Chaqueta de algodón para hombre",
-        "price": 55.99,
-        "description": "Excelentes chaquetas de abrigo para primavera/otoño/invierno, adecuadas para muchas ocasiones, como trabajar, hacer caminatas, acampar, escalar montañas/rocas, andar en bicicleta, viajar u otras actividades al aire libre. Buena opción de regalo para usted o su familiar. Un amor de corazón cálido para el padre, esposo o hijo en este día de acción de gracias o Navidad.",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-        "rating": {
-          "rate": 4.7,
-          "count": 500
-        },
-        "oferta": {
-          "porcentaje": 0,
-          "precioConDescuento": "55.99"
-        },
-        "cantidad": 1
-      }
-    }
-  },
-  {
-    "id": 11,
-    "fecha": "2024-05-18T23:10:32.174Z",
-    "total": "212.09",
-    "productos": {
-      "0": {
-        "id": 2,
-        "title": "Camisetas ajustadas premium informales para hombre",
-        "price": 22.3,
-        "description": "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable. Y camisas con costuras sólidas y cuello redondo hechas para mayor durabilidad y un excelente ajuste para ropa de moda informal y fanáticos acérrimos del béisbol. El escote redondo estilo Henley incluye una tapeta de tres botones.",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-        "rating": {
-          "rate": 4.1,
-          "count": 259
-        },
-        "oferta": {
-          "porcentaje": 0,
-          "precioConDescuento": "22.30"
-        },
-        "cantidad": 7
-      },
-      "1": {
-        "id": 3,
-        "title": "Chaqueta de algodón para hombre",
-        "price": 55.99,
-        "description": "Excelentes chaquetas de abrigo para primavera/otoño/invierno, adecuadas para muchas ocasiones, como trabajar, hacer caminatas, acampar, escalar montañas/rocas, andar en bicicleta, viajar u otras actividades al aire libre. Buena opción de regalo para usted o su familiar. Un amor de corazón cálido para el padre, esposo o hijo en este día de acción de gracias o Navidad.",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-        "rating": {
-          "rate": 4.7,
-          "count": 500
-        },
-        "oferta": {
-          "porcentaje": 0,
-          "precioConDescuento": "55.99"
-        },
-        "cantidad": 1
-      }
-    }
-  },
-  {
-    "id": 12,
-    "fecha": "2024-05-18T23:15:48.439Z",
-    "total": "121.25",
-    "productos": {
-      "0": {
-        "id": 1,
-        "title": "Fjallraven - Mochila Foldsack No. 1, con capacidad para 15 portátiles",
-        "price": 109.95,
-        "description": "Tu mochila perfecta para el uso diario y los paseos por el bosque. Guarde su computadora portátil (hasta 15 pulgadas) en la funda acolchada, su uso diario",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-        "rating": {
-          "rate": 3.9,
-          "count": 120
-        },
-        "oferta": {
-          "porcentaje": 10,
-          "precioConDescuento": "98.95"
-        },
-        "cantidad": 1
-      },
-      "1": {
-        "id": 2,
-        "title": "Camisetas ajustadas premium informales para hombre",
-        "price": 22.3,
-        "description": "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable. Y camisas con costuras sólidas y cuello redondo hechas para mayor durabilidad y un excelente ajuste para ropa de moda informal y fanáticos acérrimos del béisbol. El escote redondo estilo Henley incluye una tapeta de tres botones.",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-        "rating": {
-          "rate": 4.1,
-          "count": 259
-        },
-        "oferta": {
-          "porcentaje": 0,
-          "precioConDescuento": "22.30"
-        },
-        "cantidad": 1
-      }
-    }
-  },
-  {
-    "id": 13,
-    "fecha": "2024-05-18T23:26:02.079Z",
-    "total": "121.25",
-    "productos": {
-      "0": {
-        "id": 2,
-        "title": "Camisetas ajustadas premium informales para hombre",
-        "price": 22.3,
-        "description": "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable. Y camisas con costuras sólidas y cuello redondo hechas para mayor durabilidad y un excelente ajuste para ropa de moda informal y fanáticos acérrimos del béisbol. El escote redondo estilo Henley incluye una tapeta de tres botones.",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-        "rating": {
-          "rate": 4.1,
-          "count": 259
-        },
-        "oferta": {
-          "porcentaje": 0,
-          "precioConDescuento": "22.30"
-        },
-        "cantidad": 1
-      },
-      "1": {
-        "id": 1,
-        "title": "Fjallraven - Mochila Foldsack No. 1, con capacidad para 15 portátiles",
-        "price": 109.95,
-        "description": "Tu mochila perfecta para el uso diario y los paseos por el bosque. Guarde su computadora portátil (hasta 15 pulgadas) en la funda acolchada, su uso diario",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-        "rating": {
-          "rate": 3.9,
-          "count": 120
-        },
-        "oferta": {
-          "porcentaje": 10,
-          "precioConDescuento": "98.95"
-        },
-        "cantidad": 1
-      }
-    }
-  },
-  {
-    "id": 14,
-    "fecha": "2024-05-18T23:44:07.115Z",
-    "total": "1722.67",
-    "productos": {
-      "0": {
-        "id": 2,
-        "title": "Camisetas ajustadas premium informales para hombre",
-        "price": 22.3,
-        "description": "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable. Y camisas con costuras sólidas y cuello redondo hechas para mayor durabilidad y un excelente ajuste para ropa de moda informal y fanáticos acérrimos del béisbol. El escote redondo estilo Henley incluye una tapeta de tres botones.",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-        "rating": {
-          "rate": 4.1,
-          "count": 259
-        },
-        "oferta": {
-          "porcentaje": 0,
-          "precioConDescuento": "22.30"
-        },
-        "cantidad": 11
-      },
-      "1": {
-        "id": 1,
-        "title": "Fjallraven - Mochila Foldsack No. 1, con capacidad para 15 portátiles",
-        "price": 109.95,
-        "description": "Tu mochila perfecta para el uso diario y los paseos por el bosque. Guarde su computadora portátil (hasta 15 pulgadas) en la funda acolchada, su uso diario",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-        "rating": {
-          "rate": 3.9,
-          "count": 120
-        },
-        "oferta": {
-          "porcentaje": 10,
-          "precioConDescuento": "98.95"
-        },
-        "cantidad": 10
-      },
-      "2": {
-        "id": 4,
-        "title": "Corte ajustado informal para hombre",
-        "price": 15.99,
-        "description": "El color puede ser ligeramente diferente en la pantalla y en la práctica. / Tenga en cuenta que la constitución corporal varía según la persona, por lo tanto, la información detallada sobre el tamaño debe revisarse a continuación en la descripción del producto.",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
-        "rating": {
-          "rate": 2.1,
-          "count": 430
-        },
-        "oferta": {
-          "porcentaje": 0,
-          "precioConDescuento": "15.99"
-        },
-        "cantidad": 6
       },
       "3": {
-        "id": 3,
-        "title": "Chaqueta de algodón para hombre",
-        "price": 55.99,
-        "description": "Excelentes chaquetas de abrigo para primavera/otoño/invierno, adecuadas para muchas ocasiones, como trabajar, hacer caminatas, acampar, escalar montañas/rocas, andar en bicicleta, viajar u otras actividades al aire libre. Buena opción de regalo para usted o su familiar. Un amor de corazón cálido para el padre, esposo o hijo en este día de acción de gracias o Navidad.",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-        "rating": {
-          "rate": 4.7,
-          "count": 500
-        },
-        "oferta": {
-          "porcentaje": 0,
-          "precioConDescuento": "55.99"
-        },
-        "cantidad": 7
-      }
-    }
-  },
-  {
-    "id": 15,
-    "fecha": "2024-05-19T01:22:29.961Z",
-    "total": "1687.47",
-    "productos": {
-      "0": {
-        "id": 1,
-        "title": "Fjallraven - Mochila Foldsack No. 1, con capacidad para 15 portátiles",
-        "price": 109.95,
-        "description": "Tu mochila perfecta para el uso diario y los paseos por el bosque. Guarde su computadora portátil (hasta 15 pulgadas) en la funda acolchada, su uso diario",
-        "category": "Ropa de Hombre",
-        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-        "rating": {
-          "rate": 3.9,
-          "count": 120
-        },
-        "oferta": {
-          "porcentaje": 10,
-          "precioConDescuento": "98.95"
-        },
-        "cantidad": 1
-      },
-      "1": {
-        "id": 6,
-        "title": "Micropavé pequeño de oro macizo",
-        "price": 168,
-        "description": "Satisfacción garantizada. Devuelva o cambie cualquier pedido dentro de los 30 días. Diseñado y vendido por Hafeez Center en los Estados Unidos. Satisfacción garantizada. Devuelva o cambie cualquier pedido dentro de los 30 días.",
-        "category": "joyería",
-        "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
-        "rating": {
-          "rate": 3.9,
-          "count": 70
-        },
-        "oferta": {
-          "porcentaje": 10,
-          "precioConDescuento": "151.20"
-        },
-        "cantidad": 1
-      },
-      "2": {
         "id": 8,
         "title": "Búho perforado de acero inoxidable chapado en oro rosa doble",
         "price": 10.99,
@@ -806,71 +969,126 @@
         },
         "cantidad": 1
       },
-      "3": {
-        "id": 5,
-        "title": "John Hardy Pulsera de cadena con estación de dragón dorado y plateado Legends Naga para mujer",
-        "price": 695,
-        "description": "De nuestra colección Legends, el Naga se inspiró en el mítico dragón de agua que protege la perla del océano. Úselo mirando hacia adentro para recibir amor y abundancia, o hacia afuera para protección.",
+      "4": {
+        "id": 7,
+        "title": "Princesa chapada en oro blanco",
+        "price": 9.99,
+        "description": "Anillo de promesa de diamante solitario de compromiso de boda creado clásico para ella. Regalos para mimar más tu amor para Compromiso, Boda, Aniversario, San Valentín...",
         "category": "joyería",
-        "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+        "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
         "rating": {
-          "rate": 4.6,
+          "rate": 3,
           "count": 400
         },
         "oferta": {
-          "porcentaje": 25,
-          "precioConDescuento": "521.25"
+          "porcentaje": 0,
+          "precioConDescuento": "9.99"
         },
         "cantidad": 1
-      },
-      "4": {
-        "id": 10,
-        "title": "SanDisk SSD PLUS 1TB SSD interno - SATA III 6 Gb/s",
-        "price": 109,
-        "description": "Actualización sencilla para un inicio, apagado, carga de aplicaciones y respuesta más rápidos (en comparación con el disco duro SATA de 2,5” de 5400 RPM; basado en especificaciones publicadas y pruebas de evaluación comparativas internas utilizando puntajes PCMark vantage) Aumenta el rendimiento de escritura en ráfaga, lo que lo hace ideal para cargas de trabajo típicas de PC El equilibrio perfecto entre rendimiento y confiabilidad Velocidades de lectura/escritura de hasta 535 MB/s/450 MB/s (según pruebas internas; el rendimiento puede variar según la capacidad de la unidad, el dispositivo host, el sistema operativo y la aplicación).",
-        "category": "electrónica",
-        "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+      }
+    }
+  },
+  {
+    "idCompra": 15,
+    "fecha": "2024-05-19T23:56:08.368Z",
+    "total": "671.99",
+    "productos": {
+      "0": {
+        "id": 1,
+        "title": "Fjallraven - Mochila Foldsack No. 1, con capacidad para 15 portátiles",
+        "price": 109.95,
+        "description": "Tu mochila perfecta para el uso diario y los paseos por el bosque. Guarde su computadora portátil (hasta 15 pulgadas) en la funda acolchada, su uso diario",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
         "rating": {
-          "rate": 2.9,
-          "count": 470
+          "rate": 3.9,
+          "count": 120
         },
         "oferta": {
           "porcentaje": 10,
-          "precioConDescuento": "98.10"
+          "precioConDescuento": "98.95"
         },
-        "cantidad": 1
+        "cantidad": 6
       },
-      "5": {
-        "id": 15,
-        "title": "BIYLACLESEN Chaqueta de snowboard 3 en 1 para mujer Abrigos de invierno",
-        "price": 56.99,
-        "description": "Nota: Las chaquetas son de tamaño estándar de EE. UU., elija la talla como su uso habitual. Material: 100% poliéster; Tejido del forro desmontable: forro polar cálido. Forro funcional desmontable: agradable al tacto, ligero y cálido. Chaqueta con forro de cuello alto que te mantiene abrigado en climas fríos. Bolsillos con cremallera: 2 bolsillos para las manos con cremallera, 2 bolsillos con cremallera en el pecho (suficiente para guardar tarjetas o llaves) y 1 bolsillo oculto en el interior. Los bolsillos para las manos con cremallera y el bolsillo oculto mantienen sus cosas seguras. Diseño humanizado: capucha ajustable y desmontable y puño ajustable para evitar el viento y el agua, para un ajuste cómodo. El diseño desmontable 3 en 1 brinda más comodidad, puede separar el abrigo y el interior según sea necesario, o usarlos juntos. Es adecuado para diferentes estaciones y le ayuda a adaptarse a diferentes climas.",
-        "category": "ropa de mujer",
-        "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
+      "1": {
+        "id": 2,
+        "title": "Camisetas ajustadas premium informales para hombre",
+        "price": 22.3,
+        "description": "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable. Y camisas con costuras sólidas y cuello redondo hechas para mayor durabilidad y un excelente ajuste para ropa de moda informal y fanáticos acérrimos del béisbol. El escote redondo estilo Henley incluye una tapeta de tres botones.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
         "rating": {
-          "rate": 2.6,
-          "count": 235
+          "rate": 4.1,
+          "count": 259
         },
         "oferta": {
           "porcentaje": 0,
-          "precioConDescuento": "56.99"
+          "precioConDescuento": "22.30"
         },
         "cantidad": 1
       },
-      "6": {
-        "id": 14,
-        "title": "Monitor de juegos curvo Samsung CHG90 de 49 pulgadas y 144 Hz (LC49HG90DMNXZA) – Pantalla súper ultraancha QLED",
-        "price": 999.99,
-        "description": "MONITOR PARA JUEGOS CURVO 32:9 SÚPER ULTRAANCHO DE 49 PULGADAS con pantalla dual de 27 pulgadas una al lado de la otra TECNOLOGÍA QUANTUM DOT (QLED), compatibilidad con HDR y calibración de fábrica que proporciona colores y contraste increíblemente realistas y precisos ALTA FRECUENCIA DE ACTUALIZACIÓN de 144 HZ y tiempo de respuesta ultrarrápido de 1 ms para trabajar elimine el desenfoque de movimiento, las imágenes fantasma y reduzca el retraso de entrada",
-        "category": "electrónica",
-        "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+      "2": {
+        "id": 3,
+        "title": "Chaqueta de algodón para hombre",
+        "price": 55.99,
+        "description": "Excelentes chaquetas de abrigo para primavera/otoño/invierno, adecuadas para muchas ocasiones, como trabajar, hacer caminatas, acampar, escalar montañas/rocas, andar en bicicleta, viajar u otras actividades al aire libre. Buena opción de regalo para usted o su familiar. Un amor de corazón cálido para el padre, esposo o hijo en este día de acción de gracias o Navidad.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
         "rating": {
-          "rate": 2.2,
-          "count": 140
+          "rate": 4.7,
+          "count": 500
         },
         "oferta": {
-          "porcentaje": 25,
-          "precioConDescuento": "749.99"
+          "porcentaje": 0,
+          "precioConDescuento": "55.99"
+        },
+        "cantidad": 1
+      }
+    }
+  },
+  {
+    "idCompra": 16,
+    "fecha": "2024-05-19T23:59:01.265Z",
+    "total": "98.95",
+    "productos": {
+      "0": {
+        "id": 1,
+        "title": "Fjallraven - Mochila Foldsack No. 1, con capacidad para 15 portátiles",
+        "price": 109.95,
+        "description": "Tu mochila perfecta para el uso diario y los paseos por el bosque. Guarde su computadora portátil (hasta 15 pulgadas) en la funda acolchada, su uso diario",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "rating": {
+          "rate": 3.9,
+          "count": 120
+        },
+        "oferta": {
+          "porcentaje": 10,
+          "precioConDescuento": "98.95"
+        },
+        "cantidad": 1
+      }
+    }
+  },
+  {
+    "idCompra": 17,
+    "fecha": "2024-05-20T00:02:14.707Z",
+    "total": "22.30",
+    "productos": {
+      "0": {
+        "id": 2,
+        "title": "Camisetas ajustadas premium informales para hombre",
+        "price": 22.3,
+        "description": "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable. Y camisas con costuras sólidas y cuello redondo hechas para mayor durabilidad y un excelente ajuste para ropa de moda informal y fanáticos acérrimos del béisbol. El escote redondo estilo Henley incluye una tapeta de tres botones.",
+        "category": "Ropa de Hombre",
+        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        "rating": {
+          "rate": 4.1,
+          "count": 259
+        },
+        "oferta": {
+          "porcentaje": 0,
+          "precioConDescuento": "22.30"
         },
         "cantidad": 1
       }

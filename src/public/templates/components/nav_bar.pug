@@ -1,4 +1,4 @@
-header.container-fluit.header
+header.container-fluit.header.position-fixed.w-100.z-3
   nav.navbar.navbar-expand-lg.bg-body-tertiary
     .container-fluid.px-5
       a.navbar-brand
@@ -6,14 +6,11 @@ header.container-fluit.header
       button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
       .collapse.navbar-collapse#navbarSupportedContent.contenedor-menu
-        form.d-flex(role='search')
-          input.form-control.me-2(type='search', placeholder='Buscar', aria-label='Search')
-          button.btn.btn-outline-success(type='submit') Buscar
         ul.navbar-nav.ms-auto.mb-2.mb-lg-0-mx-auto.w-50.d-flex.justify-content-evenly 
           li.nav-item
             a.nav-link.active(aria-current='page', href='/') Inicio
           li.nav-item.dropdown
-            a.nav-link.dropdown-toggle(href='#', role='button', data-bs-toggle='dropdown', aria-expanded='false') Categoria
+            a.nav-link.dropdown-toggle(href='#', role='button', data-bs-toggle='dropdown', aria-expanded='false' disabled) Categoria
             ul.dropdown-menu
               li
                 a.dropdown-item(href='#') Todo
@@ -36,7 +33,7 @@ header.container-fluit.header
               li
                 a.dropdown-item(href='#') Ofertas
           li.nav-item
-            button.btn.btn-light(data-bs-target="#compras", data-bs-toggle="modal") Compras
+            button#tCompras.btn.btn-light(data-bs-target="#compras", data-bs-toggle="modal") Compras
           li#btnCarrito.nav-item.position-relative
             a
               i.btn.btn-primary(type="button", data-bs-toggle="offcanvas", data-bs-target="#offcanvasRight", aria-controls="offcanvasRight").bi.bi-cart-fill

@@ -36,13 +36,14 @@ router.post("/compra", async (req, res) => {
     let compra = req.body;
 
     let comprasData = await fs.readFile('src/json/comprasRealizadas.json');
-    let compras = JSON.parse(comprasData);
     
-    let ids = compras.map(e => e.id);
+    let compras = JSON.parse(comprasData);
+
+    let ids = compras.map(e => e.idCompra);
     
     let compraId;
 
-    if (ids === null || ids.length == 0) {
+    if (ids == null || ids.length == 0) {
       compraId = 0;
     } else {
       compraId = Math.max(...ids) + 1;
@@ -52,19 +53,31 @@ router.post("/compra", async (req, res) => {
     
 
     compras.push({
-      id: compraId,
+      idCompra: compraId,
       fecha: new Date(),
       total: parseFloat(totalAPagar).toFixed(2),
       productos: { ...compra }
     });
 
     await fs.writeFile('src/json/comprasRealizadas.json', JSON.stringify(compras, null, 2));
-
-    res.json({ text: "Llega bien hasta el final" });
+    res.json({carga: 'exitosa'});
   } catch (err) {
     console.log("Error al cargar la compra", err.message);
     res.status(500).send({ error: "Error interno del servidor", message: err.message });
   }
 });
+
+router.get('/cargarTabla', async (req, res) => {
+  try {
+    let cargarTabla = await fs.readFile('src/json/comprasRealizadas.json');
+
+    cargarTabla = JSON.parse(cargarTabla);
+    
+    res.send(cargarTabla);
+  } catch (err) {
+    console.log("Error al enviar tabla de compras", err.message);
+    res.status(500).send({ error: "Error interno del servidor", message: err.message });
+  }
+})
 
 module.exports = router;
